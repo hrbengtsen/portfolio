@@ -1,0 +1,75 @@
+/*
+  simpleUI-colour.css is a customizeable colour module to the framework made by Mikkel Bengtsen
+
+  Created under the MIT License.
+*/
+
+.white,
+.hover-white:hover {
+    color: #000;
+    background-color: #fff!important
+}
+.text-white,
+.hover-text-white:hover {
+    color: #fff!important
+}
+.border-white,
+.hover-border-white:hover {
+    border-color: #fff!important
+}
+
+.blue,
+.hover-blue:hover {
+    color: #fff;
+    background-color: #092349!important
+}
+.text-blue,
+.hover-text-blue:hover {
+    color: #092349!important
+}
+.border-blue,
+.hover-border-blue:hover {
+    border-color: #092349!important
+}
+
+.dark-blue,
+.hover-dark-blue:hover {
+    color: #fff;
+    background-color: #021d44!important
+}
+.text-dark-blue,
+.hover-text-dark-blue:hover {
+    color: #021d44!important
+}
+.border-dark-blue,
+.hover-border-dark-blue:hover {
+    border-color: #021d44!important
+}
+
+.red,
+.hover-red:hover {
+    color: #fff;
+    background-color: #fe3e55!important
+}
+.text-red,
+.hover-text-red:hover {
+    color: #fe3e55!important
+}
+.border-red,
+.hover-border-red:hover {
+    border-color: #fe3e55!important
+}
+
+.gray,
+.hover-gray:hover {
+    color: #fff;
+    background-color: #465976!important
+}
+.text-gray,
+.hover-text-gray:hover {
+    color: #465976!important
+}
+.border-gray,
+.hover-border-gray:hover {
+    border-color: #465976!important
+}

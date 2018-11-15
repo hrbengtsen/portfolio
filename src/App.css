@@ -1,32 +1,41 @@
-.App {
-  text-align: center;
+/* Custom styles outside of sUI */
+.bg {
+  background: #092349;
+  background: -webkit-linear-gradient(0deg, #092349, #021d44);
+  background: -o-linear-gradient(0deg, #092349, #021d44);
+  background: linear-gradient(0deg, #092349, #021d44);
+  color: #fff;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.hero {
+  	background-position: center;
+  	background-repeat: no-repeat;
+    background-color: #282c34;
+  	height: 600px;
+    color: #fff
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text {
+  max-width: 540px!important
 }
 
-.App-link {
-  color: #61dafb;
+.text-for-row {
+  max-width: 900px!important
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  animation: 3.3s ease 1s infinite both logo-spin;
+  -webkit-animation: 3.3s ease 1s infinite both logo-spin
+}
+
+@keyframes logo-spin {
+  0% {
+    transform: rotate(0deg) scale(1)
   }
-  to {
-    transform: rotate(360deg);
+  35% {
+    transform: rotate(180deg) scale(1.2)
+  }
+  70%, 100% {
+    transform: rotate(360deg) scale(1)
   }
 }

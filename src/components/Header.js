@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import '../App.css';
+
+import logo from '../img/logo.png';
 
 class Header extends Component {
-  deleteBookmark(id) {
-    this.props.onDelete(id);
-  }
-
   render() {
     return (
-        <div>
-          <header>
-          
+        <div className="content">
+          <header className="bar">
+            <a href="#" className="bar-item margin bold"><img className="logo" src={logo} alt="#" height="48"/></a>
+            <div className="right padding-6 bold margin">
+              <a href="#" className="bar-item margin anim-colour hover-text-red">About</a>
+              <a href="#" className="bar-item margin anim-colour hover-text-red">Work</a>
+            </div>
           </header>
         </div>
     );
