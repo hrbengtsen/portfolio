@@ -211,9 +211,9 @@ body {
   color: #484848;
   height: 100%
 }
-/*html {
+html {
     overflow-x: hidden
-}*/
+}
 h1 {
     font-size: 70px
 }
@@ -740,14 +740,14 @@ hr.content {
     margin-bottom: 16px!important
 }
 .section {
-    margin-top: 170px!important;
-    margin-bottom: 170px!important
+    margin-top: 180px!important;
+    margin-bottom: 180px!important
 }
 .section-bottom {
-    margin-bottom: 170px!important
+    margin-bottom: 180px!important
 }
 .section-top {
-    margin-top: 170px!important
+    margin-top: 130px!important
 }
 .section-side {
     margin-left: 125px;

@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import logo from '../img/logo.png';
+import logo from '../img/logo.svg';
 
 const Footer = () => (
   <div className="dark-blue">
     <footer className="content bar">
       <a href="#" className="right bar-item margin bold"><img className="logo" src={logo} alt="#" height="48"/></a>
       <div className="padding-6 bold margin">
-        <a href="#" className="bar-item margin anim-colour hover-text-red">About</a>
+        <a href="#" className="bar-item margin text-red">About</a>
         <a href="#" className="bar-item margin anim-colour hover-text-red">Work</a>
       </div>
     </footer>

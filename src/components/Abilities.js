@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Abilities = () => (
   <div className="content section text-for-row">

@@ -1,34 +1,117 @@
 /* Custom styles outside of sUI */
 .bg {
   background: #092349;
-  background: -webkit-linear-gradient(0deg, #092349, #021d44);
-  background: -o-linear-gradient(0deg, #092349, #021d44);
-  background: linear-gradient(0deg, #092349, #021d44);
+  background: -webkit-linear-gradient(0deg, #09244c, #021d44);
+  background: -o-linear-gradient(0deg, #09244c, #021d44);
+  background: linear-gradient(0deg, #09244c, #021d44);
   color: #fff;
 }
 
+
 .hero {
-  	background-position: center;
-  	background-repeat: no-repeat;
-    background-color: #282c34;
-  	height: 600px;
-    color: #fff
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img/hero-pc.svg);
+  height: 450px
 }
+.hero-phone {
+  position: absolute;
+  top: 8%;
+  left: 12%
+}
+.hero-tablet {
+  position: absolute;
+  top: 16%;
+  left: 50%
+}
+
+
+.anim-name {
+  opacity: 0;
+  animation: 1s ease 1.2s both anim-name;
+  -webkit-animation: 1s ease 1.2s both anim-name
+}
+@keyframes anim-name {
+    from {
+        transform: translate3d(-40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes anim-name {
+    from {
+        transform: translate3d(-40px,0,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+.anim-pc {
+  opacity: 0;
+  animation: 1s ease .3s both anim-hero;
+  -webkit-animation: 1s ease .3s both anim-hero
+}
+.anim-tablet {
+  opacity: 0;
+  animation: 1s ease .6s both anim-hero;
+  -webkit-animation: 1s ease .6s both anim-hero
+}
+.anim-phone {
+  opacity: 0;
+  animation: 1s ease .9s both anim-hero;
+  -webkit-animation: 1s ease .9s both anim-hero
+}
+@keyframes anim-hero {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+@-webkit-keyframes anim-hero {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
 
 .text {
   max-width: 540px!important
 }
-
 .text-for-row {
   max-width: 900px!important
 }
 
-.logo {
-  animation: 3.3s ease 1s infinite both logo-spin;
-  -webkit-animation: 3.3s ease 1s infinite both logo-spin
-}
 
+.logo {
+  animation: 3.3s ease 1.5s infinite both logo-spin;
+  -webkit-animation: 3.3s ease 1.5s infinite both logo-spin
+}
 @keyframes logo-spin {
+  0% {
+    transform: rotate(0deg) scale(1)
+  }
+  35% {
+    transform: rotate(180deg) scale(1.2)
+  }
+  70%, 100% {
+    transform: rotate(360deg) scale(1)
+  }
+}
+@-webkit-keyframes logo-spin {
   0% {
     transform: rotate(0deg) scale(1)
   }
