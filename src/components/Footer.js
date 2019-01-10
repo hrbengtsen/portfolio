@@ -1,14 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import logo from '../img/logo.svg';
 
-const Footer = () => (
+const Footer = (props) => (
   <div className="dark-blue">
     <footer className="content bar">
-      <a href="#" className="right bar-item margin bold"><img className="logo" src={logo} alt="#" height="48"/></a>
+      <Link to="/" className="right bar-item margin bold"><img className="logo" src={logo} alt="#" height="48"/></Link>
       <div className="padding-6 bold margin">
-        <a href="#" className="bar-item margin text-red">About</a>
-        <a href="#" className="bar-item margin anim-colour hover-text-red">Work</a>
+        {props.children}
       </div>
     </footer>
 

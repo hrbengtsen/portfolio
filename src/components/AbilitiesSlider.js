@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import Slider from 'react-slick';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -16,8 +15,6 @@ class AbilitiesSlider extends Component {
   }
 
   render() {
-    let interval = this.props.slideInterval;
-
     return (
       <div>
         <CarouselProvider
@@ -29,7 +26,7 @@ class AbilitiesSlider extends Component {
           dragEnabled={false}
           isPlaying={true}
           lockOnWindowScroll={true}
-          interval={interval}
+          interval={this.props.slideInterval}
         >
           <Slider
             classNameAnimation={'slider-anim'}

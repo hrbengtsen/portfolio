@@ -16,10 +16,7 @@ const Hero = () => (
         <img className="hero-tablet anim-tablet" src={heroTablet} alt="#" height="400"/>
       </div>
     </div>
-
-
   </div>
-
 );
 
 export default Hero;

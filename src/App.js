@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // Custom CSS & simpleUI
 import './App.css';
@@ -8,26 +9,17 @@ import './simpleUI/sUI-core.css';
 import './simpleUI/sUI-grid.css';
 
 // Components
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Intro from './components/Intro';
-import Abilities from './components/Abilities';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import About from './components/About';
+import Work from './components/Work';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="bg">
-        <Header />
-        <Hero />
-        <Intro />
-        <Abilities />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <div className="bg">
+      <Route exact path="/" component={About} />
+      <Route path="/work" component={Work} />
+    </div>
+  </Router>
+);
 
 export default App;
+                        // Routing: https://reacttraining.com/react-router/web/guides/quick-start
