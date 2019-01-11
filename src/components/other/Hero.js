@@ -1,7 +1,7 @@
 import React from 'react';
 
-import heroPhone from '../img/hero-phone.svg';
-import heroTablet from '../img/hero-tablet.svg';
+import heroPhone from '../../img/hero-phone.svg';
+import heroTablet from '../../img/hero-tablet.svg';
 
 const Hero = () => (
   <div className="bg-hero center">

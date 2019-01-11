@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import AbilitiesSlider from './AbilitiesSlider';
-import designSlide1 from '../img/design-slide1.svg';
-import designSlide2 from '../img/design-slide2.svg';
-import designSlide3 from '../img/design-slide3.svg';
+import designSlide1 from '../../img/design-slide1.svg';
+import designSlide2 from '../../img/design-slide2.svg';
+import designSlide3 from '../../img/design-slide3.svg';
 
 class Abilities extends Component {
   constructor() {
