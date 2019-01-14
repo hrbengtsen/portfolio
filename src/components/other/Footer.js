@@ -33,7 +33,7 @@ class Footer extends Component {
         </footer>
 
         <footer className="container center text-gray">
-          <p>© 2018, Designed and Developed by <a href="#" className="link-current">Mikkel Bengtsen</a>.</p>
+          <p>© 2019, Designed and Developed by <a href="#" className="link-current">Mikkel Bengtsen</a>.</p>
         </footer>
       </div>
     );

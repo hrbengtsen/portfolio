@@ -51,17 +51,22 @@
         opacity: 1
     }
 }
-.anim-pc {
+.anim-pc, .anim-row1 {
   opacity: 0;
   animation: 1s ease .3s both anim-hero;
   -webkit-animation: 1s ease .3s both anim-hero
 }
-.anim-tablet {
+.anim-tablet, .anim-row2 {
   opacity: 0;
   animation: 1s ease .6s both anim-hero;
   -webkit-animation: 1s ease .6s both anim-hero
 }
-.anim-phone {
+.anim-phone, .anim-row3 {
+  opacity: 0;
+  animation: 1s ease .9s both anim-hero;
+  -webkit-animation: 1s ease .9s both anim-hero
+}
+.anim-phone, .anim-row3 {
   opacity: 0;
   animation: 1s ease .9s both anim-hero;
   -webkit-animation: 1s ease .9s both anim-hero
@@ -85,6 +90,53 @@
       transform: translate3d(0,0,0);
       opacity: 1
   }
+}
+
+
+.anim-project-info {
+  opacity: 0;
+  animation: .5s ease both anim-project;
+  -webkit-animation: .5s ease both anim-project;
+}
+@keyframes anim-project {
+  from {
+      transform: translate3d(0,20px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+@-webkit-keyframes anim-project {
+  from {
+      transform: translate3d(0,20px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+.hover-bg-small {
+  height: 250px
+}
+.hover-bg-large {
+  height: 520px
+}
+.hover-bg-small, .hover-bg-large {
+  background: #fe3e55;
+
+  opacity: 0;
+
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -ms-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out
+}
+.project-small:hover .hover-bg-small, .project-large:hover .hover-bg-large {
+  opacity: .3
 }
 
 
@@ -128,14 +180,48 @@
   outline: none!important;
   border: none!important
 }
-
 .hid:-webkit-focus {
   outline: none!important;
   border: none!important
 }
-
 .slider-anim {
   transition: transform 1000ms;
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
   will-change: transform;
 }
+
+
+.project-small {
+  height: 250px
+}
+.project-large {
+  height: 520px
+}
+.kvizboks {
+  background: url('./img/kvizboks.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+.grostedet9 {
+  background: url('./img/grostedet9.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+.bengtsen-velvaere {
+  background: url('./img/bengtsen-velvaere.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+.simpleUI {
+  background: url('./img/simpleUI.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+/*
+Add work bengtsen-velvaere & simpleUI
+- Make photoshop illustrations instead of images
+*/

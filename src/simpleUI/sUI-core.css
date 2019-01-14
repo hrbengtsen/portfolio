@@ -777,6 +777,9 @@ hr.content {
 .padding-large {
     padding: 12px 24px!important
 }
+.padding-equal {
+    padding: 12px!important
+}
 .padding-6 {
     padding-top: 6px!important;
     padding-bottom: 6px!important
@@ -812,6 +815,12 @@ hr.content {
 .padding-max {
     padding-top: 170px!important;
     padding-bottom: 170px!important
+}
+.vert-rows-top {
+    padding-bottom: 10px!important
+}
+.vert-rows-bottom {
+    padding-top: 10px!important
 }
 /* Float */
 .left {

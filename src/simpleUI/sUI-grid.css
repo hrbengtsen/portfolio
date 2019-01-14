@@ -21,7 +21,7 @@
 }
 .row-padding,
 .row-padding>.col {
-    padding: 0 12px
+    padding: 5px 10px
 }
 .col {
     float: left;
