@@ -215,10 +215,10 @@ html {
     overflow-x: hidden
 }
 h1 {
-    font-size: 70px
+    font-size: 60px
 }
 h2 {
-    font-size: 56px
+    font-size: 48px
 }
 h3 {
     font-size: 32px
@@ -302,11 +302,7 @@ a {
     margin: 0
 }
 .ul li {
-    padding: 8px 16px;
-    border-bottom: 1px solid #B9BCC3
-}
-.ul li:last-child {
-    border-bottom: none
+    padding: 8px 16px
 }
 /* Input & select */
 .input {

@@ -26,10 +26,15 @@
 }
 
 
-.anim-name {
+.anim-name1 {
   opacity: 0;
-  animation: 1s ease 1.2s both anim-name;
-  -webkit-animation: 1s ease 1.2s both anim-name
+  animation: 1s ease 1s both anim-name;
+  -webkit-animation: 1s ease 1s both anim-name
+}
+.anim-name2 {
+  opacity: 0;
+  animation: 1s ease 1.3s both anim-name;
+  -webkit-animation: 1s ease 1.3s both anim-name
 }
 @keyframes anim-name {
     from {
@@ -199,29 +204,18 @@
 }
 .kvizboks {
   background: url('./img/kvizboks.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat
 }
 .grostedet9 {
   background: url('./img/grostedet9.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat
 }
 .bengtsen-velvaere {
   background: url('./img/bengtsen-velvaere.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat
 }
 .simpleUI {
   background: url('./img/simpleUI.png');
+}
+.kvizboks, .grostedet9, .bengtsen-velvaere, .simpleUI {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat
 }
-/*
-Add work bengtsen-velvaere & simpleUI
-- Make photoshop illustrations instead of images
-*/
