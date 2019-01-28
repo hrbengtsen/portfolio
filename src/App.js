@@ -37,4 +37,5 @@ export default App;
   - Change Abilities component to be about what I have experience with and what I am learning
   - Expand Intro component
   - Create subwork pages for my displayed projects
+  - (maybe) create resumé page
 */

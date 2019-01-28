@@ -329,22 +329,15 @@ a {
 /* Dropdown */
 .dropdown-click,
 .dropdown-hover {
-    position: relative;
-    display: inline-block;
-    cursor: pointer
+    position: relative
 }
 .dropdown-hover:hover .dropdown-content {
     display: block;
     z-index: 1
 }
 .dropdown-content {
-    cursor: auto;
-    color: #000;
-    background-color: #fff;
     display: none;
-    position: absolute;
-    margin: 0;
-    padding: 0
+    position: relative
 }
 /* Sidebar & more dropdown */
 .sidebar {
