@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const Projects = () => (
+const Projects = ({match}) => (
   <div>
     <div className="content section-top row-padding">
       <div className="col s12 m12 l12">
-        <a href="https://github.com/hrbengtsen/KvizBoks">
+        <Link to={`${match.url}/kvizBoks`}>
           <div className="project-small kvizboks anim-row1 display-container">
             <div className="hover-bg-small"></div>
             <div className="display-bottomleft padding-equal display-hover anim-project-info">
@@ -13,13 +14,13 @@ const Projects = () => (
               <span>2018</span>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
 
     <div className="content section-bottom row-padding">
       <div className="col s12 m8 l8">
-        <a href="https://www.grostedet9.dk/">
+        <Link to={`${match.url}/grostedet9`}>
           <div className="project-large grostedet9 anim-row2 display-container">
             <div className="hover-bg-large"></div>
             <div className="display-bottomleft padding-equal display-hover anim-project-info">
@@ -28,12 +29,12 @@ const Projects = () => (
               <span>2018</span>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
 
       <div className="col s12 m4 l4">
         <div className="row vert-rows-top">
-          <a href="https://bengtsen-velvaere.dk/">
+          <Link to={`${match.url}/bengtsen-velvaere`}>
             <div className="project-small bengtsen-velvaere anim-row3 display-container">
               <div className="hover-bg-small"></div>
               <div className="display-bottomleft padding-equal display-hover anim-project-info">
@@ -42,11 +43,11 @@ const Projects = () => (
                 <span>2018</span>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="row vert-rows-bottom">
-          <a href="https://github.com/hrbengtsen/simpleUI">
+          <Link to={`${match.url}/simpleUI`}>
             <div className="project-small simpleUI anim-row3 display-container">
               <div className="hover-bg-small"></div>
               <div className="display-bottomleft padding-equal display-hover anim-project-info">
@@ -55,7 +56,7 @@ const Projects = () => (
                 <span>2018</span>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

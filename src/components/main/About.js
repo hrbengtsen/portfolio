@@ -7,7 +7,7 @@ import Abilities from '../other/Abilities';
 import Contact from '../other/Contact';
 import Footer from '../other/Footer';
 
-const About = () => (
+const About = ({match}) => (
   <div>
     <Header active={'About'} />
     <Hero />

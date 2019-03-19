@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Custom CSS & simpleUI
 import './App.css';
@@ -11,14 +11,22 @@ import './simpleUI/sUI-grid.css';
 // Main Components
 import About from './components/main/About';
 import Work from './components/main/Work';
+import NoMatch from './components/main/NoMatch';
 import ScrollToTop from './components/other/ScrollToTop';
+
+import Header from './components/other/Header';
+import Contact from './components/other/Contact';
+import Footer from './components/other/Footer';
 
 const App = () => (
   <Router>
     <ScrollToTop>
       <div className="bg">
-        <Route exact path="/" component={About} />
-        <Route path="/work" component={Work} />
+        <Switch>
+          <Route exact path="/" component={About} />
+          <Route path="/work" component={Work} />
+          <Route component={NoMatch} />
+        </Switch>
       </div>
     </ScrollToTop>
   </Router>
@@ -28,14 +36,12 @@ export default App;
 
 /*
   TOdo:
-  - Look into replacing pure-react-carousel with flickity
   - Look into adding lazysizes for images
   - Look into swup for opacity fade full page transitions when routing
   - QA
     - Components, create more reusable ones for better structuring and potential expanding
     - Custom CSS & simpleUI through csslint and refactoring
-  - Change Abilities component to be about what I have experience with and what I am learning
-  - Expand Intro component
+  - Expand Intro component (other interests?)
   - Create subwork pages for my displayed projects
   - (maybe) create resumé page
 */

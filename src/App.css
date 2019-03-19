@@ -16,13 +16,15 @@
 }
 .hero-phone {
   position: absolute;
-  top: 8%;
-  left: 12%
+  max-height: 140px;
+  top: 53.5%;
+  left: -20%
 }
 .hero-tablet {
   position: absolute;
-  top: 16%;
-  left: 50%
+  max-height: 200px;
+  top: 40%;
+  left: 20%
 }
 
 

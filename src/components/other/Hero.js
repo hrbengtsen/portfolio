@@ -12,8 +12,8 @@ const Hero = () => (
       </div>
 
       <div className="hero anim-pc display-container">
-        <img className="hero-phone anim-phone" src={heroPhone} alt="#" height="400"/>
-        <img className="hero-tablet anim-tablet" src={heroTablet} alt="#" height="400"/>
+        <img className="hero-phone anim-phone" src={heroPhone} alt="#"/>
+        <img className="hero-tablet anim-tablet" src={heroTablet} alt="#"/>
       </div>
     </div>
   </div>

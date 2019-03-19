@@ -254,7 +254,8 @@ hr {
 }
 .image {
     max-width: 100%;
-    height: auto
+    height: auto;
+    display: block
 }
 img {
     margin-bottom: -5px
