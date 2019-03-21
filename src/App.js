@@ -35,13 +35,15 @@ const App = () => (
 export default App;
 
 /*
-  TOdo:
-  - Look into adding lazysizes for images
-  - Look into swup for opacity fade full page transitions when routing
+  To-do:
+  - Create subwork pages for my displayed projects (1/4)
   - QA
     - Components, create more reusable ones for better structuring and potential expanding
     - Custom CSS & simpleUI through csslint and refactoring
-  - Expand Intro component (other interests?)
-  - Create subwork pages for my displayed projects
-  - (maybe) create resumé page
+    - Look into adding lazysizes for images
+
+
+  What I still need to learn about React:
+    - HOC (higher-order components)
+    - Enums generally and used in React
 */

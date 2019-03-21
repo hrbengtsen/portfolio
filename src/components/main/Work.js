@@ -11,11 +11,13 @@ import Footer from '../other/Footer';
 const Work = ({match}) => (
   <div>
     <Header active={'Work'} />
+
     <Switch>
       <Route path={`${match.path}/:projectId`} component={Project} />
       <Route path={match.path} component={Projects} />
       <Route component={NoMatch} />
     </Switch>
+
     <Contact />
     <Footer active={'Work'} />
   </div>

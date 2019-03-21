@@ -199,6 +199,15 @@
         opacity: 1
     }
 }
+.anim-seq .anim-fadeInUp:nth-child(1), .anim-seq-1 {
+    animation-delay: .2s
+}
+.anim-seq .anim-fadeInUp:nth-child(2), .anim-seq-2 {
+    animation-delay: .4s
+}
+.anim-seq .anim-fadeInUp:nth-child(3), .anim-seq-3 {
+    animation-delay: .6s
+}
 
 .anim-fadeInDown {
     opacity: 0;
@@ -262,6 +271,12 @@
         transform: translate3d(0,0,0);
         opacity: 1
     }
+}
+.anim-seq .anim-fadeInLeft:nth-child(1) {
+    animation-delay: .6s
+}
+.anim-seq .anim-fadeInLeft:nth-child(2) {
+    animation-delay: .8s
 }
 
 .anim-fadeInRight {

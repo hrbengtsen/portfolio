@@ -28,78 +28,6 @@
 }
 
 
-.anim-name1 {
-  opacity: 0;
-  animation: 1s ease 1s both anim-name;
-  -webkit-animation: 1s ease 1s both anim-name
-}
-.anim-name2 {
-  opacity: 0;
-  animation: 1s ease 1.3s both anim-name;
-  -webkit-animation: 1s ease 1.3s both anim-name
-}
-@keyframes anim-name {
-    from {
-        transform: translate3d(-40px,0,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-@-webkit-keyframes anim-name {
-    from {
-        transform: translate3d(-40px,0,0)
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-.anim-pc, .anim-row1 {
-  opacity: 0;
-  animation: 1s ease .3s both anim-hero;
-  -webkit-animation: 1s ease .3s both anim-hero
-}
-.anim-tablet, .anim-row2 {
-  opacity: 0;
-  animation: 1s ease .6s both anim-hero;
-  -webkit-animation: 1s ease .6s both anim-hero
-}
-.anim-phone, .anim-row3 {
-  opacity: 0;
-  animation: 1s ease .9s both anim-hero;
-  -webkit-animation: 1s ease .9s both anim-hero
-}
-.anim-phone, .anim-row3 {
-  opacity: 0;
-  animation: 1s ease .9s both anim-hero;
-  -webkit-animation: 1s ease .9s both anim-hero
-}
-@keyframes anim-hero {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-@-webkit-keyframes anim-hero {
-  from {
-      transform: translate3d(0,40px,0)
-  }
-
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
-
-
 .anim-project-info {
   opacity: 0;
   animation: .5s ease both anim-project;
@@ -203,7 +131,7 @@
 .project-large {
   height: 520px
 }
-.kvizboks {
+.kvizBoks {
   background: url('./img/kvizboks.png');
 }
 .grostedet9 {
@@ -215,7 +143,7 @@
 .simpleUI {
   background: url('./img/simpleUI.png');
 }
-.kvizboks, .grostedet9, .bengtsen-velvaere, .simpleUI {
+.kvizBoks, .grostedet9, .bengtsen-velvaere, .simpleUI {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat
