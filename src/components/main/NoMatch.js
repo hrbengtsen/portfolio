@@ -7,7 +7,7 @@ import Footer from '../other/Footer';
 const NoMatch = ({location}) => (
   <div>
     <Header />
-    <h3 className="content center section-top">
+    <h3 className="content center section">
       <span className="text-red">(404)</span> No match for <b>{location.pathname}</b>
     </h3>
     <Contact />

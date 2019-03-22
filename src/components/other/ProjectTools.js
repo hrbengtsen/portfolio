@@ -4,9 +4,9 @@ const ProjectTools = (props) => (
   <div className="center margin-top anim-fadeInLeft">
     <p className="margin padding-small text-gray large">
       made with
-      {props.tools.map((tool) =>
-        <span className="tag">{tool}</span>
-      )}
+      {props.tools.map((tool) => {
+        return <span className="tag">{tool}</span>;
+      })}
     </p>
   </div>
 );

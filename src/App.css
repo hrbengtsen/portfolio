@@ -18,7 +18,7 @@
   position: absolute;
   max-height: 140px;
   top: 53.5%;
-  left: -20%
+  left: -19%
 }
 .hero-tablet {
   position: absolute;
@@ -52,12 +52,6 @@
       transform: translate3d(0,0,0);
       opacity: 1
   }
-}
-.hover-bg-small {
-  height: 250px
-}
-.hover-bg-large {
-  height: 520px
 }
 .hover-bg-small, .hover-bg-large {
   background: #fe3e55;
@@ -125,11 +119,11 @@
 }
 
 
-.project-small {
-  height: 250px
+.project-small, .hover-bg-small {
+  height: 280px
 }
-.project-large {
-  height: 520px
+.project-large, .hover-bg-large {
+  height: 580px
 }
 .kvizBoks {
   background: url('./img/kvizboks.png');
@@ -140,10 +134,10 @@
 .bengtsen-velvaere {
   background: url('./img/bengtsen-velvaere.png');
 }
-.simpleUI {
-  background: url('./img/simpleUI.png');
+.portfolio {
+  background: url('./img/portfolio.png');
 }
-.kvizBoks, .grostedet9, .bengtsen-velvaere, .simpleUI {
+.kvizBoks, .grostedet9, .bengtsen-velvaere, .portfolio {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat

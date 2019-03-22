@@ -3,8 +3,11 @@ import { Switch, Route } from "react-router-dom";
 
 import Header from '../other/Header';
 import Projects from '../other/Projects';
-import Project from '../other/Project';
-import NoMatch from './NoMatch';
+
+import KvizBoks from './projects/KvizBoks';
+import Grostedet9 from './projects/Grostedet9';
+import BengtsenVelvaere from './projects/BengtsenVelvaere';
+
 import Contact from '../other/Contact';
 import Footer from '../other/Footer';
 
@@ -13,9 +16,11 @@ const Work = ({match}) => (
     <Header active={'Work'} />
 
     <Switch>
-      <Route path={`${match.path}/:projectId`} component={Project} />
+      <Route path={`${match.path}/kvizBoks`} component={KvizBoks} />
+      <Route path={`${match.path}/grostedet9`} component={Grostedet9} />
+      <Route path={`${match.path}/bengtsen-velvaere`} component={BengtsenVelvaere} />
+
       <Route path={match.path} component={Projects} />
-      <Route component={NoMatch} />
     </Switch>
 
     <Contact />

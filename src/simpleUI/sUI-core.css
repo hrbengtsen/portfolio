@@ -400,7 +400,7 @@ a {
 }
 /* Content */
 .content {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto
 }
 hr.content {
@@ -745,7 +745,7 @@ hr.content {
     margin-bottom: 180px!important
 }
 .section-top {
-    margin-top: 130px!important
+    margin-top: 80px!important
 }
 .section-side {
     margin-left: 125px;

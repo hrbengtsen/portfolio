@@ -46,13 +46,13 @@ const Projects = ({match}) => (
         </div>
 
         <div className="row vert-rows-bottom">
-          <Link to={`${match.url}/simpleUI`}>
+          <Link to={`${match.url}/portfolio`}>
             <ProjectCover
-              parentClasses={"project-small simpleUI anim-seq-3"}
+              parentClasses={"project-small portfolio anim-seq-3"}
               hover={"hover-bg-small"}
-              title={"simpleUI"}
-              type={"website"}
-              date={"2018"}
+              title={"portfolio"}
+              type={"webapp"}
+              date={"2019"}
             />
           </Link>
         </div>

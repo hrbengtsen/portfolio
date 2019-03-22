@@ -1,11 +1,18 @@
 import React from 'react';
 
-import ProjectOverview from './ProjectOverview';
-import ProjectTools from './ProjectTools';
-import Text from './Text';
-import ProjectGallary from './ProjectGallary';
+import ProjectOverview from '../../other/ProjectOverview';
+import ProjectTools from '../../other/ProjectTools';
+import Text from '../../other/Text';
+import ProjectGallary from '../../other/ProjectGallary';
 
-const Project = ({match}) => (
+import kvizboksConsole from '../../../img/kvizboks-console.JPG';
+import kvizboksController from '../../../img/kvizboks-controller.JPG';
+
+import kvizboksGame from '../../../img/kvizboks-game.JPG';
+import kvizboksVideo from '../../../img/kvizboks-video.mp4';
+import kvizboksThumbnail from '../../../img/kvizboks-video-thumbnail.jpg';
+
+const BengtsenVelvaere = () => (
   <div>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"kvizBoks"} date={"Apr. 2018"} />
@@ -26,7 +33,11 @@ const Project = ({match}) => (
           </p>
         </div>
       } />
-      <ProjectGallary />
+      <ProjectGallary
+        title={"Concept"}
+        items={[kvizboksConsole, kvizboksController, "", "", kvizboksGame, kvizboksVideo]}
+        thumbnailForVideo={kvizboksThumbnail}
+      />
       <Text parentClasses={"section-top"} text={
         <div>
           <p>Besides being different to interact with the game was designed with a competitive aspect as you play 1 on 1.
@@ -42,4 +53,4 @@ const Project = ({match}) => (
   </div>
 );
 
-export default Project;
+export default BengtsenVelvaere;
