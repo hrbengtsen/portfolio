@@ -7,6 +7,7 @@ import Projects from '../other/Projects';
 import KvizBoks from './projects/KvizBoks';
 import Grostedet9 from './projects/Grostedet9';
 import BengtsenVelvaere from './projects/BengtsenVelvaere';
+import Portfolio from './projects/Portfolio';
 
 import Contact from '../other/Contact';
 import Footer from '../other/Footer';
@@ -19,6 +20,7 @@ const Work = ({match}) => (
       <Route path={`${match.path}/kvizBoks`} component={KvizBoks} />
       <Route path={`${match.path}/grostedet9`} component={Grostedet9} />
       <Route path={`${match.path}/bengtsen-velvaere`} component={BengtsenVelvaere} />
+      <Route path={`${match.path}/portfolio`} component={Portfolio} />
 
       <Route path={match.path} component={Projects} />
     </Switch>
