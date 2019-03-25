@@ -10,7 +10,7 @@ const Projects = ({match}) => (
         <Link to={`${match.url}/kvizBoks`}>
           <ProjectCover
             parentClasses={"project-small kvizBoks anim-seq-1"}
-            hover={"hover-bg-small"}
+            hover={"hover-bg-small yellow"}
             title={"kvizBoks"}
             type={"console"}
             date={"2018"}
@@ -24,7 +24,7 @@ const Projects = ({match}) => (
         <Link to={`${match.url}/grostedet9`}>
           <ProjectCover
             parentClasses={"project-large grostedet9 anim-seq-2"}
-            hover={"hover-bg-large"}
+            hover={"hover-bg-large red"}
             title={"grostedet9"}
             type={"website"}
             date={"2018"}
@@ -37,7 +37,7 @@ const Projects = ({match}) => (
           <Link to={`${match.url}/bengtsen-velvaere`}>
             <ProjectCover
               parentClasses={"project-small bengtsen-velvaere anim-seq-3"}
-              hover={"hover-bg-small"}
+              hover={"hover-bg-small red"}
               title={"bengtsen-velvaere"}
               type={"website"}
               date={"2018"}
@@ -49,7 +49,7 @@ const Projects = ({match}) => (
           <Link to={`${match.url}/portfolio`}>
             <ProjectCover
               parentClasses={"project-small portfolio anim-seq-3"}
-              hover={"hover-bg-small"}
+              hover={"hover-bg-small light-blue"}
               title={"portfolio"}
               type={"webapp"}
               date={"2019"}

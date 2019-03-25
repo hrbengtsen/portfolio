@@ -17,32 +17,35 @@ const ProjectGallary = (props) => (
       if (i & 1) {
         if (item.endsWith(".mp4")) {
           return <GallaryItem
+            col={props.itemCol[i]}
             parentClasses={"right margin-top-n"}
             video={item}
             thumbnail={props.thumbnailForVideo}
           />;
         }
-        return <GallaryItem parentClasses={"right margin-top-n"} image={item} />;
+        return <GallaryItem col={props.itemCol[i]} parentClasses={"right margin-top-n"} image={item} />;
       }
       else {
         if (i > 0) {
           if (item.endsWith(".mp4")) {
             return <GallaryItem
+              col={props.itemCol[i]}
               parentClasses={"margin-top-n"}
               video={item}
               thumbnail={props.thumbnailForVideo}
             />;
           }
-          return <GallaryItem parentClasses={"margin-top-n"} image={item} />;
+          return <GallaryItem col={props.itemCol[i]} parentClasses={"margin-top-n"} image={item} />;
         }
         else {
           if (item.endsWith(".mp4")) {
             return <GallaryItem
+              col={props.itemCol[i]}
               video={item}
               thumbnail={props.thumbnailForVideo}
             />;
           }
-          return <GallaryItem image={item} />;
+          return <GallaryItem col={props.itemCol[i]} image={item} />;
         }
       }
     })

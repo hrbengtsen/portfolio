@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectOverview = (props) => (
   <div className={`project-large anim-fadeInUp display-container section-top ${props.project}`}>
     <div className="display-bottomleft padding-equal">
-      <h2 className="margin padding-small">{props.project}</h2>
+      <h2 className="margin padding-small text-red">{props.project}</h2>
 
       <p className="margin padding-small text-gray large">
         <span>{props.date}</span>

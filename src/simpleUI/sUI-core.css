@@ -450,7 +450,7 @@ hr.content {
         margin-top: 20px!important
     }
 }
-@media (min-width: 786px) {
+@media (min-width: 768px) {
     .margin-top-n {
         margin-top: -32px!important
     }

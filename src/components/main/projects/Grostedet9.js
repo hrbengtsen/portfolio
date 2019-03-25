@@ -3,9 +3,12 @@ import React from 'react';
 import ProjectOverview from '../../other/ProjectOverview';
 import ProjectTools from '../../other/ProjectTools';
 import Text from '../../other/Text';
+import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
 
-import grostedet9Landing from '../../../img/grostedet9-landing.png';
+import grostedet93dRender from '../../../img/grostedet9-3drender.png';
+import grostedet9MobileRender from '../../../img/grostedet9-mobilerender.png';
+import grostedet9TabletRender from '../../../img/grostedet9-tabletrender.png';
 
 const Grostedet9 = () => (
   <div>
@@ -14,9 +17,7 @@ const Grostedet9 = () => (
       <ProjectTools tools={[
         "HTML",
         "CSS",
-        "JavaScript",
-        "Git",
-        "Github"
+        "JavaScript"
       ]} />
       <Text title={"About"} parentClasses={"section"} text={
         <div>
@@ -28,7 +29,8 @@ const Grostedet9 = () => (
       } />
       <ProjectGallary
         title={"Concept"}
-        items={[grostedet9Landing]}
+        items={[grostedet93dRender, grostedet9MobileRender, grostedet9TabletRender]}
+        itemCol={["l9 m9", "l7 m7", "l8 m8"]}
       />
       <Text parentClasses={"section-top"} text={
         <div>
@@ -37,6 +39,7 @@ const Grostedet9 = () => (
           </p>
         </div>
       } />
+      <Button external name={"Go to website"} link={"https://www.grostedet9.dk/"} />
     </div>
   </div>
 );

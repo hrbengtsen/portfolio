@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
 import Experience from './Experience';
+import Button from './Button';
 import design from '../../img/design.svg';
 import develop from '../../img/develop.svg';
 
@@ -31,9 +31,7 @@ const Abilities = () => (
       </div>
     </div>
 
-    <div className="center section-top">
-      <Link to="/work" className="button round anim-arrow-colour hover-text-red bold">Explore my work <span className="material-icons vert-align">keyboard_arrow_right</span></Link>
-    </div>
+    <Button name={"Explore my work"} link={"/work"} />
   </div>
 );
 

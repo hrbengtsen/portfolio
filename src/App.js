@@ -36,7 +36,7 @@ export default App;
 
 /*
   To-do:
-  - Create subwork pages for my displayed projects (1/4)
+  - Create subwork pages for my displayed projects (3/4)
   - QA
     - Components, create more reusable ones for better structuring and potential expanding
     - Custom CSS & simpleUI through csslint and refactoring

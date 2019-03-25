@@ -3,7 +3,11 @@ import React from 'react';
 import ProjectOverview from '../../other/ProjectOverview';
 import ProjectTools from '../../other/ProjectTools';
 import Text from '../../other/Text';
+import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
+
+import bengtsenLanding from '../../../img/bengtsen-landing.png';
+import bengtsenMobileRender from '../../../img/bengtsen-mobilerender.png';
 
 const BengtsenVelvaere = () => (
   <div>
@@ -13,9 +17,7 @@ const BengtsenVelvaere = () => (
         "HTML",
         "CSS",
         "JavaScript",
-        "JQuery",
-        "Git",
-        "Github"
+        "JQuery"
       ]} />
       <Text title={"About"} parentClasses={"section"} text={
         <div>
@@ -28,7 +30,8 @@ const BengtsenVelvaere = () => (
       } />
       <ProjectGallary
         title={"Concept"}
-        items={[]}
+        items={[bengtsenLanding, bengtsenMobileRender]}
+        itemCol={["l8 m8", "l11 m11"]}
       />
       <Text parentClasses={"section-top"} text={
         <div>
@@ -37,6 +40,7 @@ const BengtsenVelvaere = () => (
           </p>
         </div>
       } />
+      <Button external name={"Go to website"} link={"https://bengtsen-velvaere.dk/"} />
     </div>
   </div>
 );

@@ -3,16 +3,18 @@ import React from 'react';
 import ProjectOverview from '../../other/ProjectOverview';
 import ProjectTools from '../../other/ProjectTools';
 import Text from '../../other/Text';
+import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
+
+import portfolioLogo from '../../../img/portfolio-logo.png';
+import portfolioCode from '../../../img/portfolio-code.png';
 
 const Portfolio = () => (
   <div>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"portfolio"} date={"Mar. 2019"} />
       <ProjectTools tools={[
-        "React",
-        "Git",
-        "Github"
+        "React"
       ]} />
       <Text title={"About"} parentClasses={"section"} text={
         <div>
@@ -22,7 +24,8 @@ const Portfolio = () => (
       } />
       <ProjectGallary
         title={"Concept"}
-        items={[]}
+        items={[portfolioLogo, portfolioCode]}
+        itemCol={["l9 m9", "l8 m8"]}
       />
       <Text parentClasses={"section-top"} text={
         <div>
@@ -30,6 +33,7 @@ const Portfolio = () => (
           </p>
         </div>
       } />
+      <Button external name={"Explore the repository"} link={"https://github.com/hrbengtsen/portfolio"} />
     </div>
   </div>
 );

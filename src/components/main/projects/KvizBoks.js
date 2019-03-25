@@ -3,6 +3,7 @@ import React from 'react';
 import ProjectOverview from '../../other/ProjectOverview';
 import ProjectTools from '../../other/ProjectTools';
 import Text from '../../other/Text';
+import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
 
 import kvizboksConsole from '../../../img/kvizboks-console.JPG';
@@ -18,10 +19,7 @@ const KvizBoks = () => (
       <ProjectOverview project={"kvizBoks"} date={"Apr. 2018"} />
       <ProjectTools tools={[
         "Processing",
-        "Arduino",
-        "Git",
-        "Github",
-        "Trello"
+        "Arduino"
       ]} />
       <Text title={"About"} parentClasses={"section"} text={
         <div>
@@ -36,6 +34,7 @@ const KvizBoks = () => (
       <ProjectGallary
         title={"Concept"}
         items={[kvizboksConsole, kvizboksController, "", "", kvizboksGame, kvizboksVideo]}
+        itemCol={["l10 m10", "l8 m8", "", "", "l9 m9", "l9 m9"]}
         thumbnailForVideo={kvizboksThumbnail}
       />
       <Text parentClasses={"section-top"} text={
@@ -49,6 +48,7 @@ const KvizBoks = () => (
           </p>
         </div>
       } />
+      <Button external name={"Explore the repository"} link={"https://github.com/hrbengtsen/kvizBoks"} />
     </div>
   </div>
 );

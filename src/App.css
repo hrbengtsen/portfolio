@@ -54,7 +54,6 @@
   }
 }
 .hover-bg-small, .hover-bg-large {
-  background: #fe3e55;
   opacity: 0;
 
   -webkit-transition: opacity .3s ease-out;
@@ -64,7 +63,7 @@
   transition: opacity .3s ease-out
 }
 .project-small:hover .hover-bg-small, .project-large:hover .hover-bg-large {
-  opacity: .7
+  opacity: .75
 }
 
 

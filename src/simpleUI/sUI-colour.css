@@ -46,6 +46,20 @@
     border-color: #021d44!important
 }
 
+.light-blue,
+.hover-light-blue:hover {
+    color: #fff;
+    background-color: #32cbd1!important
+}
+.text-light-blue,
+.hover-text-light-blue:hover {
+    color: #32cbd1!important
+}
+.border-light-blue,
+.hover-border-light-blue:hover {
+    border-color: #32cbd1!important
+}
+
 .red,
 .hover-red:hover {
     color: #fff;
@@ -58,6 +72,20 @@
 .border-red,
 .hover-border-red:hover {
     border-color: #fe3e55!important
+}
+
+.yellow,
+.hover-yellow:hover {
+    color: #fff;
+    background-color: #fff53d!important
+}
+.text-yellow,
+.hover-text-yellow:hover {
+    color: #fff53d!important
+}
+.border-yellow,
+.hover-border-yellow:hover {
+    border-color: #fff53d!important
 }
 
 .gray,
