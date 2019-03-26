@@ -7,7 +7,7 @@ import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
 
 import kvizboksObjects from '../../../img/kvizboks-objects.JPG';
-import kvizboksConsole from '../../../img/kvizboks-console.JPG';
+import kvizboksConsole from '../../../img/kvizboks-console.jpg';
 import kvizboksController from '../../../img/kvizboks-controller.JPG';
 
 import kvizboksGame from '../../../img/kvizboks-game.JPG';

@@ -20,6 +20,11 @@ class Footer extends Component {
         workClassName += ' text-red';
         aboutClassName += ' anim-colour hover-text-red';
         break;
+
+      default:
+        aboutClassName += ' text-red';
+        workClassName += ' anim-colour hover-text-red';
+        break;
     }
 
     return (

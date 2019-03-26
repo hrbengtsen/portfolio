@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 const ProjectCover = (props) => (
   <div className={`anim-fadeInUp display-container ${props.parentClasses}`}>

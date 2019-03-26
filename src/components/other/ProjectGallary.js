@@ -7,7 +7,7 @@ const ProjectGallary = (props) => (
     <h3 className="margin padding-small text-red">{props.title}</h3>
 
     {props.items.map((item, i) => {
-      if (item == "") {
+      if (item === "") {
         return <div>
           <div className="section hide-small"></div>
           <div className="margin-top-n hide-medium hide-large"></div>

@@ -14,10 +14,6 @@ import Work from './components/main/Work';
 import NoMatch from './components/main/NoMatch';
 import ScrollToTop from './components/other/ScrollToTop';
 
-import Header from './components/other/Header';
-import Contact from './components/other/Contact';
-import Footer from './components/other/Footer';
-
 const App = () => (
   <Router>
     <ScrollToTop>
@@ -36,6 +32,7 @@ export default App;
 
 /*
   To-do:
+  - Combine Header & Footer component to Nav component
   - QA
     - Components, create more reusable ones for better structuring and potential expanding
     - Custom CSS & simpleUI through csslint and refactoring
