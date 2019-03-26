@@ -7,9 +7,9 @@ const Projects = ({match}) => (
   <div className="content">
     <div className="section-top row-padding">
       <div className="col s12 m12 l12">
-        <Link to={`${match.url}/kvizBoks`}>
+        <Link to={`${match.url}/kvizboks`}>
           <ProjectCover
-            parentClasses={"project-small kvizBoks anim-seq-1"}
+            parentClasses={"project-small KvizBoks anim-seq-1"}
             hover={"hover-bg-small yellow"}
             title={"kvizBoks"}
             type={"console"}

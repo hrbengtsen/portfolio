@@ -6,6 +6,7 @@ import Text from '../../other/Text';
 import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
 
+import kvizboksObjects from '../../../img/kvizboks-objects.JPG';
 import kvizboksConsole from '../../../img/kvizboks-console.JPG';
 import kvizboksController from '../../../img/kvizboks-controller.JPG';
 
@@ -16,25 +17,26 @@ import kvizboksThumbnail from '../../../img/kvizboks-video-thumbnail.jpg';
 const KvizBoks = () => (
   <div>
     <div className="content padding-as-row anim-seq">
-      <ProjectOverview project={"kvizBoks"} date={"Apr. 2018"} />
+      <ProjectOverview project={"KvizBoks"} date={"Apr. 2018"} />
       <ProjectTools tools={[
         "Processing",
         "Arduino"
       ]} />
       <Text title={"About"} parentClasses={"section"} text={
         <div>
-          <p>kvizBoks is a console made to redefine learning maths through playing in a unique and fun way.
+          <p>KvizBoks is a console made to redefine learning maths through playing in a unique and fun way.
           The project is a prototype created as part of an exam in Digital Interaction at Aarhus Tech.
           </p>
-          <p>Instead of interacting with the game the old fashioned way with multiple buttons, the interaction is done primarily through moving the controller.
-          The console was created around the idea of being a useful addition to math classes in elementary school, to keep the students engaged at the end of lessons, while keeping it relevant to the subject.
+          <p>Instead of interacting with the game the old fashioned way with multiple buttons, the interaction is done primarily through moving the controller and placing objects on top of the console to select levels.
+          </p>
+          <p>The console was created around the idea of being a useful addition to math classes in elementary school, to keep the students engaged at the end of lessons, while keeping it relevant to the subject.
           </p>
         </div>
       } />
       <ProjectGallary
         title={"Concept"}
-        items={[kvizboksConsole, kvizboksController, "", "", kvizboksGame, kvizboksVideo]}
-        itemCol={["l10 m10", "l8 m8", "", "", "l9 m9", "l9 m9"]}
+        items={[kvizboksObjects, kvizboksController, kvizboksConsole, "", "", kvizboksGame, kvizboksVideo]}
+        itemCol={["10 m10", "l8 m8", "l9 m9", "", "", "l9 m9", "l9 m9"]}
         thumbnailForVideo={kvizboksThumbnail}
       />
       <Text parentClasses={"section-top"} text={
@@ -46,9 +48,11 @@ const KvizBoks = () => (
           </p>
           <p>Additionally the game has a fun twist, where when a player correctly answers a question, they recieve a new one and both their new answer as well as the other player's current answer is shuffled among new options, potentially changing the position of the other player's current answer.
           </p>
+          <p>The game was developed in Processing and Arduino was used to receive and handle inputs, from the compass sensors and buttons on the controllers as well as from the rfid sensor, used for reading objects placed on top of the console.
+          </p>
         </div>
       } />
-      <Button external name={"Explore the repository"} link={"https://github.com/hrbengtsen/kvizBoks"} />
+      <Button external name={"Explore the repository"} link={"https://github.com/hrbengtsen/kvizboks"} />
     </div>
   </div>
 );

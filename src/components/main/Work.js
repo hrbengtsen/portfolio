@@ -17,7 +17,7 @@ const Work = ({match}) => (
     <Header active={'Work'} />
 
     <Switch>
-      <Route path={`${match.path}/kvizBoks`} component={KvizBoks} />
+      <Route path={`${match.path}/kvizboks`} component={KvizBoks} />
       <Route path={`${match.path}/grostedet9`} component={Grostedet9} />
       <Route path={`${match.path}/bengtsen-velvaere`} component={BengtsenVelvaere} />
       <Route path={`${match.path}/portfolio`} component={Portfolio} />

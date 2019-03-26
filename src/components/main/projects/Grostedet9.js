@@ -6,9 +6,9 @@ import Text from '../../other/Text';
 import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
 
-import grostedet93dRender from '../../../img/grostedet9-3drender.png';
+import grostedet93dRender from '../../../img/grostedet9-3drender.jpg';
 import grostedet9MobileRender from '../../../img/grostedet9-mobilerender.png';
-import grostedet9TabletRender from '../../../img/grostedet9-tabletrender.png';
+import grostedet9TabletRender from '../../../img/grostedet9-tabletrender.jpg';
 
 const Grostedet9 = () => (
   <div>

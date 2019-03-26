@@ -124,7 +124,7 @@
 .project-large, .hover-bg-large {
   height: 580px
 }
-.kvizBoks {
+.KvizBoks {
   background: url('./img/kvizboks.png');
 }
 .grostedet9 {
@@ -136,7 +136,7 @@
 .portfolio {
   background: url('./img/portfolio.png');
 }
-.kvizBoks, .grostedet9, .bengtsen-velvaere, .portfolio {
+.KvizBoks, .grostedet9, .bengtsen-velvaere, .portfolio {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat

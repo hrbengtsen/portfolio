@@ -6,7 +6,7 @@ import Text from '../../other/Text';
 import Button from '../../other/Button';
 import ProjectGallary from '../../other/ProjectGallary';
 
-import bengtsenLanding from '../../../img/bengtsen-landing.png';
+import bengtsenLanding from '../../../img/bengtsen-landing.jpg';
 import bengtsenMobileRender from '../../../img/bengtsen-mobilerender.png';
 
 const BengtsenVelvaere = () => (
@@ -23,7 +23,8 @@ const BengtsenVelvaere = () => (
         <div>
           <p>bengtsen-velvaere is a website created for the alternative treatment company of the same name.
           The website was developed from the ground up in pure HTML, CSS, JavaScript and a tiny bit of JQuery.
-          It's a traditional static website, originally created in association with a schoolproject, where the assignment was to develop or redesign a website for a company, which was accessible to work together with.
+          </p>
+          <p>It's a traditional static website, originally created in association with a schoolproject, where the assignment was to develop or redesign a website for a company, which was accessible to work with.
           For this I chose to work with my mother's company bengtsen-velvaere.
           </p>
         </div>
