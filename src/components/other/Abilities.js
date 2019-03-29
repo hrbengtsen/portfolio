@@ -16,17 +16,17 @@ const Abilities = () => (
         <Experience exp={"Design"} />
       </div>
       <div className="col s12 m5 l5 hid">
-        <img src={design} alt="#"/>
+        <img src={design} alt="Workflow of design"/>
       </div>
     </div>
 
     <div className="row-padding">
       <div className="col s12 m5 l5 hid">
-        <img src={develop} alt="#"/>
+        <img src={develop} alt="Workflow of development"/>
       </div>
       <div className="col s12 m7 l7">
         <h4>Develop what's needed.</h4>
-        <p>I develop with compatibility, performance as well as multiple devices in mind to ensure quality in the products I create.</p>
+        <p>I develop with compatibility, accessibility, performance as well as multiple devices in mind to ensure quality in the products I create.</p>
         <Experience exp={"Programming"} />
       </div>
     </div>

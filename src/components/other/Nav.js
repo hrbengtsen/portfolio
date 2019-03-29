@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import logo from '../../img/logo.svg';
 
-class Footer extends Component {
+class Nav extends Component {
   render() {
     // Default classes for links
     let aboutClassName = 'bar-item margin';
@@ -22,27 +22,28 @@ class Footer extends Component {
         break;
 
       default:
-        aboutClassName += ' text-red';
+        aboutClassName += ' anim-colour hover-text-red';
         workClassName += ' anim-colour hover-text-red';
         break;
     }
 
     return (
-      <div className="dark-blue">
-        <footer className="content bar">
-          <Link to="/" className="right bar-item margin bold"><img className="logo" src={logo} alt="#" height="48"/></Link>
-          <div className="padding-6 bold margin">
+      <div className={this.props.reverse ? "dark-blue" : ""}>
+        <nav className="content bar">
+          <Link to="/" className={this.props.reverse ? "right bar-item margin bold" : "bar-item margin bold"}><img className="logo" src={logo} alt="#" height="48"/></Link>
+          <div className={this.props.reverse ? "padding-6 bold margin" : "right padding-6 bold margin"}>
             <Link to="/" className={aboutClassName}>About</Link>
             <Link to="/work" className={workClassName}>Work</Link>
           </div>
-        </footer>
+        </nav>
 
-        <footer className="container center text-gray">
-          <p>© 2019, Designed and Developed by <Link to="/" className="link-current">Mikkel Bengtsen</Link>.</p>
-        </footer>
+        {this.props.footer ?
+          <footer className="container center text-gray">
+            <p>© 2019, Designed and Developed by <Link to="/" className="link-current">Mikkel Bengtsen</Link>.</p>
+          </footer> : ""}
       </div>
     );
   }
 }
 
-export default Footer;
+export default Nav;

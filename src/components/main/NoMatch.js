@@ -1,17 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
-import Header from '../other/Header';
+import Nav from '../other/Nav';
+import Button from '../other/Button';
 import Contact from '../other/Contact';
-import Footer from '../other/Footer';
 
-const NoMatch = ({location}) => (
+const NoMatch = () => (
   <div>
-    <Header />
-    <h3 className="content center section">
-      <span className="text-red">(404)</span> No match for <b>{location.pathname}</b>
-    </h3>
+    <Helmet>
+      <title>404 - Mikkel Bengtsen</title>
+    </Helmet>
+    <Nav />
+    <h1 className="content center section-top">
+      <span className="text-red">(404)</span> Page not found.
+    </h1>
+    <Button name={"Go to homepage"} link={"/"} />
     <Contact />
-    <Footer />
+    <Nav reverse footer />
   </div>
 );
 

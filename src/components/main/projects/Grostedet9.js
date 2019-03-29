@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import ProjectOverview from '../../other/ProjectOverview';
 import ProjectTools from '../../other/ProjectTools';
@@ -12,6 +13,9 @@ import grostedet9TabletRender from '../../../img/grostedet9-tabletrender.jpg';
 
 const Grostedet9 = () => (
   <div>
+    <Helmet>
+      <title>Grostedet9 - Mikkel Bengtsen</title>
+    </Helmet>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"grostedet9"} date={"Nov. 2018"} />
       <ProjectTools tools={[

@@ -1,21 +1,22 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
-import Header from '../other/Header';
-import Projects from '../other/Projects';
+import Nav from '../other/Nav';
+import Contact from '../other/Contact';
 
+import Projects from './projects/Projects';
 import KvizBoks from './projects/KvizBoks';
 import Grostedet9 from './projects/Grostedet9';
 import BengtsenVelvaere from './projects/BengtsenVelvaere';
 import Portfolio from './projects/Portfolio';
 
-import Contact from '../other/Contact';
-import Footer from '../other/Footer';
-
 const Work = ({match}) => (
   <div>
-    <Header active={'Work'} />
-
+    <Helmet>
+      <title>My Work - Mikkel Bengtsen</title>
+    </Helmet>
+    <Nav active={'Work'} />
     <Switch>
       <Route path={`${match.path}/kvizboks`} component={KvizBoks} />
       <Route path={`${match.path}/grostedet9`} component={Grostedet9} />
@@ -24,9 +25,8 @@ const Work = ({match}) => (
 
       <Route path={match.path} component={Projects} />
     </Switch>
-
     <Contact />
-    <Footer active={'Work'} />
+    <Nav active={'Work'} reverse footer />
   </div>
 
 );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import ProjectCover from './ProjectCover';
+import ProjectCover from '../../other/ProjectCover';
 
 const Projects = ({match}) => (
   <div className="content">
@@ -11,7 +11,7 @@ const Projects = ({match}) => (
           <ProjectCover
             parentClasses={"project-small KvizBoks anim-seq-1"}
             hover={"hover-bg-small yellow"}
-            title={"kvizBoks"}
+            title={"KvizBoks"}
             type={"console"}
             date={"2018"}
           />

@@ -102,21 +102,6 @@
   }
 }
 
-.hid {
-  overflow: hidden;
-  outline: none!important;
-  border: none!important
-}
-.hid:-webkit-focus {
-  outline: none!important;
-  border: none!important
-}
-.slider-anim {
-  transition: transform 1000ms;
-  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
-  will-change: transform;
-}
-
 
 .project-small, .hover-bg-small {
   height: 280px

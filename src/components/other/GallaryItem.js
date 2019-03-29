@@ -8,7 +8,7 @@ const GallaryItem = (props) => (
           Your browser does not support mp4 video.
         </video>
         :
-        <img className="image" src={props.image} alt="#"/>
+        <img className="image" src={props.image} alt="Gallary item of project's concept"/>
       }
     </div>
   </div>

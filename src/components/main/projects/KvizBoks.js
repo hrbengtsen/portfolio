@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import ProjectOverview from '../../other/ProjectOverview';
 import ProjectTools from '../../other/ProjectTools';
@@ -16,6 +17,9 @@ import kvizboksThumbnail from '../../../img/kvizboks-video-thumbnail.jpg';
 
 const KvizBoks = () => (
   <div>
+    <Helmet>
+      <title>KvizBoks - Mikkel Bengtsen</title>
+    </Helmet>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"KvizBoks"} date={"Apr. 2018"} />
       <ProjectTools tools={[

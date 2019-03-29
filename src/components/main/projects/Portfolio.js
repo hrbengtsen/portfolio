@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import ProjectOverview from '../../other/ProjectOverview';
 import ProjectTools from '../../other/ProjectTools';
@@ -12,6 +13,9 @@ import portfolioRender from '../../../img/portfolio-render.png';
 
 const Portfolio = () => (
   <div>
+    <Helmet>
+      <title>Portfolio - Mikkel Bengtsen</title>
+    </Helmet>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"portfolio"} date={"Mar. 2019"} />
       <ProjectTools tools={[
