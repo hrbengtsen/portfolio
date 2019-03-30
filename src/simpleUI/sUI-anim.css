@@ -6,7 +6,9 @@
 
 .anim-slide-bottom {
     background-size: 100% 200%;
+    background: -webkit-gradient(linear, color-stop(50%,#282c34), color-stop(50%,#ff9999));
     background-image: -webkit-linear-gradient(#282c34 50%, #ff9999 50%); /* Customize colours of the slide animations */
+    background-image: -moz-linear-gradient(#282c34 50%, #ff9999 50%);
     background-image: -o-linear-gradient(#282c34 50%, #ff9999 50%);
     background-image: linear-gradient(#282c34 50%, #ff9999 50%);
     -webkit-transition: background-position .3s ease;
@@ -21,7 +23,9 @@
 
 .anim-slide-top {
     background-size: 100% 200%;
+    background: -webkit-gradient(linear, color-stop(50%,#20232a), color-stop(50%,#ff9999));
     background-image: -webkit-linear-gradient(#20232a 50%, #ff9999 50%);
+    background-image: -moz-linear-gradient(#20232a 50%, #ff9999 50%);
     background-image: -o-linear-gradient(#20232a 50%, #ff9999 50%);
     background-image: linear-gradient(#20232a 50%, #ff9999 50%);
     -webkit-transition: background-position .3s ease;
@@ -37,7 +41,9 @@
 .anim-slide-left {
     /*margin-left: 1px; <- fix if element is 1px off with colour*/
     background-size: 200% 100%;
+    background: -webkit-gradient(linear, color-stop(50%,red), color-stop(50%,darkred));
     background-image: -webkit-linear-gradient(left, red 50%, darkred 50%);
+    background-image: -moz-linear-gradient(left, red 50%, darkred 50%);
     background-image: -o-linear-gradient(left, red 50%, darkred 50%);
     background-image: linear-gradient(to right, red 50%, darkred 50%);
     -webkit-transition: background-position .3s ease;
@@ -52,7 +58,9 @@
 
 .anim-slide-right {
     background-size: 200% 100%;
+    background: -webkit-gradient(linear, color-stop(50%,red), color-stop(50%,darkred));
     background-image: -webkit-linear-gradient(left, red 50%, darkred 50%);
+    background-image: -moz-linear-gradient(left, red 50%, darkred 50%);
     background-image: -o-linear-gradient(left, red 50%, darkred 50%);
     background-image: linear-gradient(to right, red 50%, darkred 50%);
     -webkit-transition: background-position .3s ease;
@@ -117,9 +125,12 @@
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: both;
 
     animation-name: fadeIn;
-    -webkit-animation-name: fadeIn
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn
 }
 @keyframes fadeIn {
     from {
@@ -145,9 +156,12 @@
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: both;
 
     animation-name: fadeOut;
-    -webkit-animation-name: fadeOut
+    -webkit-animation-name: fadeOut;
+    -moz-animation-name: fadeOut
 }
 @keyframes fadeOut {
     from {
@@ -175,9 +189,12 @@
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: both;
 
     animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp
 }
 @keyframes fadeInUp {
     from {
@@ -216,9 +233,12 @@
     animation-fill-mode: both;
     -webkit-animation-duration: .33s;
     -webkit-animation-fill-mode: both;
+    -moz-animation-duration: .33s;
+    -moz-animation-fill-mode: both;
 
     animation-name: fadeInDown;
-    -webkit-animation-name: fadeInDown
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown
 }
 @keyframes fadeInDown {
     from {
@@ -248,9 +268,12 @@
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: both;
 
     animation-name: fadeInLeft;
-    -webkit-animation-name: fadeInLeft
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft
 }
 @keyframes fadeInLeft {
     from {
@@ -286,9 +309,12 @@
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: both;
 
     animation-name: fadeInRight;
-    -webkit-animation-name: fadeInRight
+    -webkit-animation-name: fadeInRight;
+    -moz-animation-name: fadeInRight
 }
 @keyframes fadeInRight {
     from {
@@ -411,7 +437,7 @@
     }
 }
 
-.anim-colour, .anim-link-colour, .link-current {
+.anim-colour, .anim-link-colour, .link-current, .anim-arrow-colour {
     -webkit-transition: color .2s ease-out, background .2s ease-in;
     -moz-transition: color .2s ease-out, background .2s ease-in;
     -ms-transition: color .2s ease-out, background .2s ease-in;
@@ -464,21 +490,13 @@
     background: #465976
 }
 
-.anim-arrow span {
+.anim-arrow span, .anim-arrow-colour span {
   margin-left: 0;
   -webkit-transition: margin-left .2s ease;
   -moz-transition: margin-left .2s ease;
   -ms-transition: margin-left .2s ease;
   -o-transition: margin-left .2s ease;
   transition: margin-left .2s ease
-}
-.anim-arrow-colour span {
-  margin-left: 0;
-  -webkit-transition: margin-left .2s ease, color .2s ease-out, background .2s ease-in;
-  -moz-transition: margin-left .2s ease, color .2s ease-out, background .2s ease-in;
-  -ms-transition: margin-left .2s ease, color .2s ease-out, background .2s ease-in;
-  -o-transition: margin-left .2s ease, color .2s ease-out, background .2s ease-in;
-  transition: margin-left .2s ease, color .2s ease-out, background .2s ease-in
 }
 .anim-arrow:hover span, .anim-arrow-colour:hover span {
   margin-left: 10px
@@ -544,7 +562,7 @@ a:hover #navIcon span {
 
 #navIcon.open span:nth-child(1) {
   top: 14px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 #navIcon.open span:nth-child(2) {
@@ -563,6 +581,6 @@ a:hover #navIcon span {
 }
 #navIcon.open span:nth-child(4) {
   top: 14px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }

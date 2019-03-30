@@ -5,7 +5,7 @@ const ProjectTools = (props) => (
     <p className="margin padding-small text-gray large">
       made with
       {props.tools.map((tool) => {
-        return <span className="tag">{tool}</span>;
+        return <span className="tag text-white">{tool}</span>;
       })}
     </p>
   </div>

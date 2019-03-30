@@ -104,12 +104,12 @@
         width: 99.99999%
     }
 		.hide-mcollapse {
-        display: none!important
+        display: none
     }
 }
 @media (max-width: 768px) {
 		.hide-mcollapsed {
-        display: none!important
+        display: none
     }
 }
 @media (min-width: 993px) {

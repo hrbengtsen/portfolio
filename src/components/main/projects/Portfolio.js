@@ -14,7 +14,7 @@ import portfolioRender from '../../../img/portfolio-render.png';
 const Portfolio = () => (
   <div>
     <Helmet>
-      <title>Portfolio - Mikkel Bengtsen</title>
+      <title>Project: Portfolio - Mikkel Bengtsen</title>
     </Helmet>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"portfolio"} date={"Mar. 2019"} />

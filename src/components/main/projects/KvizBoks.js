@@ -18,7 +18,7 @@ import kvizboksThumbnail from '../../../img/kvizboks-video-thumbnail.jpg';
 const KvizBoks = () => (
   <div>
     <Helmet>
-      <title>KvizBoks - Mikkel Bengtsen</title>
+      <title>Project: KvizBoks - Mikkel Bengtsen</title>
     </Helmet>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"KvizBoks"} date={"Apr. 2018"} />

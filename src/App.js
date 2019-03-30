@@ -15,7 +15,7 @@ import ScrollToTop from './components/other/ScrollToTop';
 const App = () => (
   <Router>
     <ScrollToTop>
-      <div className="bg">
+      <div className="bg text-white">
         <Switch>
           <Route exact path="/" component={About} />
           <Route path="/work" component={Work} />
@@ -30,6 +30,5 @@ export default App;
 
 /*
   To-do:
-  - QA
-    - Custom CSS & simpleUI through csslint and refactoring
+  - Fix hero-phone & hero-tablet in other browsers
 */

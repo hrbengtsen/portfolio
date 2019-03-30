@@ -7,97 +7,97 @@
 .white,
 .hover-white:hover {
     color: #000;
-    background-color: #fff!important
+    background-color: #fff
 }
 .text-white,
 .hover-text-white:hover {
-    color: #fff!important
+    color: #fff
 }
 .border-white,
 .hover-border-white:hover {
-    border-color: #fff!important
+    border-color: #fff
 }
 
 .blue,
 .hover-blue:hover {
     color: #fff;
-    background-color: #092349!important
+    background-color: #092349
 }
 .text-blue,
 .hover-text-blue:hover {
-    color: #092349!important
+    color: #092349
 }
 .border-blue,
 .hover-border-blue:hover {
-    border-color: #092349!important
+    border-color: #092349
 }
 
 .dark-blue,
 .hover-dark-blue:hover {
     color: #fff;
-    background-color: #021d44!important
+    background-color: #021d44
 }
 .text-dark-blue,
 .hover-text-dark-blue:hover {
-    color: #021d44!important
+    color: #021d44
 }
 .border-dark-blue,
 .hover-border-dark-blue:hover {
-    border-color: #021d44!important
+    border-color: #021d44
 }
 
 .light-blue,
 .hover-light-blue:hover {
     color: #fff;
-    background-color: #32cbd1!important
+    background-color: #32cbd1
 }
 .text-light-blue,
 .hover-text-light-blue:hover {
-    color: #32cbd1!important
+    color: #32cbd1
 }
 .border-light-blue,
 .hover-border-light-blue:hover {
-    border-color: #32cbd1!important
+    border-color: #32cbd1
 }
 
 .red,
 .hover-red:hover {
     color: #fff;
-    background-color: #fe3e55!important
+    background-color: #fe3e55
 }
 .text-red,
 .hover-text-red:hover {
-    color: #fe3e55!important
+    color: #fe3e55
 }
 .border-red,
 .hover-border-red:hover {
-    border-color: #fe3e55!important
+    border-color: #fe3e55
 }
 
 .yellow,
 .hover-yellow:hover {
     color: #fff;
-    background-color: #fff53d!important
+    background-color: #fff53d
 }
 .text-yellow,
 .hover-text-yellow:hover {
-    color: #fff53d!important
+    color: #fff53d
 }
 .border-yellow,
 .hover-border-yellow:hover {
-    border-color: #fff53d!important
+    border-color: #fff53d
 }
 
 .gray,
 .hover-gray:hover {
     color: #fff;
-    background-color: #465976!important
+    background-color: #465976
 }
 .text-gray,
 .hover-text-gray:hover {
-    color: #465976!important
+    color: #465976
 }
 .border-gray,
 .hover-border-gray:hover {
-    border-color: #465976!important
+    border-color: #465976
 }

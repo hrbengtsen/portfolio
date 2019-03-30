@@ -13,7 +13,7 @@ import bengtsenMobileRender from '../../../img/bengtsen-mobilerender.png';
 const BengtsenVelvaere = () => (
   <div>
     <Helmet>
-      <title>Bengtsen Velvaere - Mikkel Bengtsen</title>
+      <title>Project: Bengtsen Velvaere - Mikkel Bengtsen</title>
     </Helmet>
     <div className="content padding-as-row anim-seq">
       <ProjectOverview project={"bengtsen-velvaere"} date={"Jan. 2018"} />

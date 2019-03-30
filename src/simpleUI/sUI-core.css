@@ -208,28 +208,27 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.5;
-  color: #484848;
   height: 100%
 }
 html {
     overflow-x: hidden
 }
-h1 {
+h1, .jumbo {
     font-size: 60px
 }
-h2 {
+h2, .xxxlarge {
     font-size: 48px
 }
-h3 {
+h3, .xxlarge {
     font-size: 32px
 }
-h4 {
+h4, .xlarge {
     font-size: 24px
 }
-h5 {
+h5, .large {
     font-size: 20px
 }
-h6 {
+h6, .medium {
     font-size: 18px
 }
 h1,
@@ -242,14 +241,11 @@ h6 {
     font-weight: 800;
     margin: 8px 0
 }
-.wide {
-  letter-spacing: 3px
-}
 .bold {
   font-weight: 800
 }
 hr {
-    border-top: 1px solid #B9BCC3;
+    border-top: 1px solid;
     margin: 20px 0
 }
 .image {
@@ -268,7 +264,6 @@ a {
 .button {
     border: none;
     display: inline-block;
-    outline: 0;
     padding: 8px 16px;
     vertical-align: middle;
     overflow: hidden;
@@ -287,14 +282,13 @@ a {
     -o-user-select: none;
     user-select: none
 }
+.button:focus {
+  outline: none
+}
 .disabled,
 .button:disabled {
     cursor: not-allowed;
     opacity: 0.3
-}
-.disabled *,
-:disabled * {
-    pointer-events: none
 }
 /* Lists */
 .ul {
@@ -310,14 +304,14 @@ a {
     padding: 8px;
     display: block;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid;
     width: 100%
 }
 .select {
     padding: 9px 0;
     width: 100%;
     border: none;
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid
 }
 /* Check- & radiobox */
 .check,
@@ -344,12 +338,11 @@ a {
 .sidebar {
     height: 100%;
     width: 200px;
-    background-color: #fff;
-    position: fixed!important;
+    position: fixed;
     z-index: 1
 }
-.bar-block .dropdown-hover .button,
-.bar-block .dropdown-click .button {
+.bar-block .dropdown-hover,
+.bar-block .dropdown-click {
     text-align: left;
     padding: 8px 16px
 }
@@ -366,7 +359,6 @@ a {
     padding: 8px 16px;
     float: left;
     border: none;
-    outline: none;
     display: block
 }
 .bar .dropdown-hover,
@@ -382,7 +374,6 @@ a {
     padding: 8px 16px;
     text-align: left;
     border: none;
-    outline: none;
     white-space: normal;
     float: none
 }
@@ -392,9 +383,6 @@ a {
 /* Tag */
 .tag {
     display: inline-block;
-    color: #B9BCC3!important;
-    /*padding-left: 8px;
-    padding-right: 8px;*/
     margin-left: 8px;
     text-align: center
 }
@@ -404,17 +392,14 @@ a {
     margin: auto
 }
 hr.content {
-    max-width: 1035px
+    max-width: 1080px
 }
 /* Show & hide */
 .hide {
-    display: none!important
+    display: none
 }
 .show {
-    display: block!important
-}
-.show-inline-block {
-    display: inline-block!important
+    display: block
 }
 /* Responsive media queries for styles */
 @media (max-width: 767px) {
@@ -427,7 +412,7 @@ hr.content {
     }
     .mobile {
         display: block;
-        width: 100%!important
+        width: 100%
     }
     .bar-item.mobile,
     .dropdown-hover.mobile,
@@ -435,24 +420,22 @@ hr.content {
         text-align: center
     }
     .dropdown-hover.mobile,
-    .dropdown-hover.mobile .btn,
     .dropdown-hover.mobile .button,
     .dropdown-click.mobile,
-    .dropdown-click.mobile .btn,
     .dropdown-click.mobile .button {
         width: 100%
     }
     .section-side {
-        margin-left: 0px!important;
-        margin-right: 0px!important
+        margin-left: 0;
+        margin-right: 0
     }
     .margin-top-n {
-        margin-top: 20px!important
+        margin-top: 20px
     }
 }
 @media (min-width: 768px) {
     .margin-top-n {
-        margin-top: -32px!important
+        margin-top: -32px
     }
 }
 @media (min-width: 993px) {
@@ -460,7 +443,7 @@ hr.content {
         display: none!important
     }
     .sidebar.collapse {
-        display: block!important
+        display: block
     }
 }
 @media (max-width: 992px) and (min-width: 768px) {
@@ -537,36 +520,51 @@ hr.content {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 .display-left {
     position: absolute;
     top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%)
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%)
 }
 .display-right {
     position: absolute;
     top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%)
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%)
 }
 .display-topmiddle {
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
 }
 .display-bottommiddle {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
 }
 .display-container {
   position: relative
@@ -590,8 +588,7 @@ hr.content {
 .round-small {
     border-radius: 2px
 }
-.round,
-.round-medium {
+.round {
     border-radius: 4px
 }
 .round-large {
@@ -603,7 +600,7 @@ hr.content {
 .round-xxlarge {
     border-radius: 32px
 }
-/* container */
+/* Container */
 .container {
     padding: 0.01em 16px
 }
@@ -612,8 +609,7 @@ hr.content {
     font-family: Consolas, "courier new";
     width: auto;
     padding: 8px 12px;
-    word-wrap: break-word;
-    color: #ff9999!important
+    word-wrap: break-word
 }
 /* Shadows */
 .shadow-min {
@@ -661,167 +657,145 @@ hr.content {
 .sepia-min {
     filter: sepia(50%)
 }
-/* Sizes */
-.small {
-    font-size: 14px!important
-}
-.medium {
-    font-size: 16px!important
-}
-.large {
-    font-size: 20px!important
-}
-.xlarge {
-    font-size: 24px!important
-}
-.xxlarge {
-    font-size: 36px!important
-}
-.xxxlarge {
-    font-size: 48px!important
-}
-.jumbo {
-    font-size: 70px!important
-}
 /* Alignment */
 .left-align {
-    text-align: left!important
+    text-align: left
 }
 .right-align {
-    text-align: right!important
+    text-align: right
 }
 .justify {
-    text-align: justify!important
+    text-align: justify
 }
 .center {
-    text-align: center!important
+    text-align: center
 }
 .vert-align {
-  vertical-align: bottom;
+  vertical-align: bottom
 }
 /* Border */
 .border-0 {
-    border: 0!important
+    border: 0
 }
 .border {
-    border: 1px solid #ccc!important
+    border: 1px solid #ccc
 }
 .border-top {
-    border-top: 2px solid #ccc!important
+    border-top: 2px solid #ccc
 }
 .border-bottom {
-    border-bottom: 2px solid #ccc!important
+    border-bottom: 2px solid #ccc
 }
 .border-left {
-    border-left: 2px solid #ccc!important
+    border-left: 2px solid #ccc
 }
 .border-right {
-    border-right: 2px solid #ccc!important
+    border-right: 2px solid #ccc
 }
 /* Border on bars */
 .topbar {
-    border-top: 6px solid #ccc!important
+    border-top: 6px solid #ccc
 }
 .bottombar {
-    border-bottom: 6px solid #ccc!important
+    border-bottom: 6px solid #ccc
 }
 .leftbar {
-    border-left: 6px solid #ccc!important
+    border-left: 6px solid #ccc
 }
 .rightbar {
-    border-right: 6px solid #ccc!important
+    border-right: 6px solid #ccc
 }
 /* Margin & padding */
 .sub-section,
 .code {
-    margin-top: 16px!important;
-    margin-bottom: 16px!important
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 .section {
-    margin-top: 180px!important;
-    margin-bottom: 180px!important
+    margin-top: 180px;
+    margin-bottom: 180px
 }
 .section-bottom {
-    margin-bottom: 180px!important
+    margin-bottom: 180px
 }
 .section-top {
-    margin-top: 80px!important
+    margin-top: 80px
 }
 .section-side {
-    margin-left: 125px;
-    margin-right: 125px
+    margin-left: 120px;
+    margin-right: 120px
 }
 .margin {
-    margin: 6px!important
+    margin: 6px
 }
 .margin-top {
-    margin-top: 24px!important
+    margin-top: 24px
 }
 .margin-bottom {
-    margin-bottom: 24px!important
+    margin-bottom: 24px
 }
 .margin-left {
-    margin-left: 24px!important
+      margin-left: 16px
 }
 .margin-right {
-    margin-right: 16px!important
+    margin-right: 16px
 }
 .padding-small {
-    padding: 4px 8px!important
+    padding: 4px 8px
 }
 .padding-as-row {
-    padding: 5px 20px!important
+    padding: 5px 20px
 }
 .padding {
-    padding: 8px 16px!important
+    padding: 8px 16px
 }
 .padding-large {
-    padding: 12px 24px!important
+    padding: 12px 24px
 }
 .padding-equal {
-    padding: 12px!important
+    padding: 12px
 }
 .padding-6 {
-    padding-top: 6px!important;
-    padding-bottom: 6px!important
+    padding-top: 6px;
+    padding-bottom: 6px
 }
 .padding-16 {
-    padding-top: 16px!important;
-    padding-bottom: 16px!important
+    padding-top: 16px;
+    padding-bottom: 16px
 }
 .padding-20 {
-    padding-top: 20px!important;
-    padding-bottom: 20px!important
+    padding-top: 20px;
+    padding-bottom: 20px
 }
 .padding-24 {
-    padding-top: 24px!important;
-    padding-bottom: 24px!important
+    padding-top: 24px;
+    padding-bottom: 24px
 }
 .padding-32 {
-    padding-top: 32px!important;
-    padding-bottom: 32px!important
+    padding-top: 32px;
+    padding-bottom: 32px
 }
 .padding-48 {
-    padding-top: 48px!important;
-    padding-bottom: 48px!important
+    padding-top: 48px;
+    padding-bottom: 48px
 }
 .padding-64 {
-    padding-top: 64px!important;
-    padding-bottom: 64px!important
+    padding-top: 64px;
+    padding-bottom: 64px
 }
 .padding-80 {
-    padding-top: 80px!important;
-    padding-bottom: 80px!important
+    padding-top: 80px;
+    padding-bottom: 80px
 }
 .padding-max {
-    padding-top: 170px!important;
-    padding-bottom: 170px!important
+    padding-top: 180px;
+    padding-bottom: 180px
 }
 .vert-rows-top {
-    padding-bottom: 10px!important
+    padding-bottom: 10px
 }
 .vert-rows-bottom {
-    padding-top: 10px!important
+    padding-top: 10px
 }
 /* Float */
 .left {
@@ -829,10 +803,4 @@ hr.content {
 }
 .right {
     float: right!important
-}
-.select {
-    padding: 9px 0;
-    width: 75%;
-    border: none;
-    border-bottom: 1px solid #ccc
 }
