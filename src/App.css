@@ -78,9 +78,9 @@
 
 
 .logo {
-  animation: 3.5s ease 2s infinite both logo-spin;
-  -webkit-animation: 3.5s ease 2s infinite both logo-spin;
-  -moz-animation: 3.5s ease 2s infinite both logo-spin
+  animation: 3.5s ease 1.6s infinite both logo-spin;
+  -webkit-animation: 3.5s ease 1.6s infinite both logo-spin;
+  -moz-animation: 3.5s ease 1.6s infinite both logo-spin
 }
 @keyframes logo-spin {
   0% {

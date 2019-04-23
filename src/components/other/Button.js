@@ -8,7 +8,6 @@ const Button = (props) => (
     :
     <Link to={props.link} className="button round anim-arrow-colour hover-text-red bold">{props.name} <span className="material-icons vert-align">keyboard_arrow_right</span></Link>
     }
-
   </div>
 );
 
