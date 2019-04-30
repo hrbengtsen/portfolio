@@ -15,17 +15,26 @@
   background-image: url(img/hero-pc.svg);
   height: 450px
 }
+.hero-nested {
+  padding-top: 220px
+}
 .hero-phone {
-  position: absolute;
-  max-height: 140px;
-  top: 53.5%;
-  left: -19%
+  max-height: 130px;
+  max-width: 110px;
+  display: inline-block
+}
+@media (min-width: 768px) {
+  .hero-phone {
+    margin-right: 220px
+  }
 }
 .hero-tablet {
-  position: absolute;
   max-height: 200px;
-  top: 40%;
-  left: 20%
+  max-width: 180px;
+  display: inline-block
+}
+.hero-margin-n {
+  margin-top: -75px
 }
 
 

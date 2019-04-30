@@ -12,8 +12,10 @@ const Hero = () => (
       </div>
 
       <div className="hero anim-seq anim-fadeInUp display-container">
-        <img className="hero-phone anim-fadeInUp" src={heroPhone} alt="Phone Illustration"/>
-        <img className="hero-tablet anim-fadeInUp" src={heroTablet} alt="Tablet Illustration"/>
+        <div className="hero-nested">
+          <img className="hero-phone anim-fadeInUp" src={heroPhone} alt="Phone Illustration"/>
+          <img className="hero-tablet anim-fadeInUp" src={heroTablet} alt="Tablet Illustration"/>
+        </div>
       </div>
     </main>
   </div>
