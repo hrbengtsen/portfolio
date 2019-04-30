@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://hrbengtsen.github.io/portfolio",
+  "homepage": "https://www.mikkelbengtsen.com",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
