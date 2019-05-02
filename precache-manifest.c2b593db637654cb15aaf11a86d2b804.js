@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks-video-thumbnail.4684e3f0.jpg"
   },
   {
-    "revision": "03277d67ffc68106c906",
-    "url": "/static/css/main.0302d39a.chunk.css"
+    "revision": "33186a79b98ae4980933",
+    "url": "/static/css/main.535e66b7.chunk.css"
   },
   {
     "revision": "58b1966bbb1b74bb5a03",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks-video.14a00987.mp4"
   },
   {
-    "revision": "03277d67ffc68106c906",
-    "url": "/static/js/main.03277d67.chunk.js"
+    "revision": "33186a79b98ae4980933",
+    "url": "/static/js/main.33186a79.chunk.js"
   },
   {
     "revision": "65d20db9f1bc6255914729fdae164f9c",
@@ -100,19 +100,19 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks.db6f3e55.png"
   },
   {
-    "revision": "cfdeac31832385e844c49e6c9c27c623",
-    "url": "/static/media/grostedet9.cfdeac31.png"
-  },
-  {
     "revision": "9a8072cd8e0f20b97e18236bce80cf80",
     "url": "/static/media/bengtsen-velvaere.9a8072cd.png"
+  },
+  {
+    "revision": "cfdeac31832385e844c49e6c9c27c623",
+    "url": "/static/media/grostedet9.cfdeac31.png"
   },
   {
     "revision": "71cf1648f2e9f194624ff2c4fcc12edd",
     "url": "/static/media/portfolio.71cf1648.png"
   },
   {
-    "revision": "32ffe6dec31ecee77dde71b7a744a68d",
+    "revision": "4ed2413d18fa8d38ba950eade3e8853d",
     "url": "/index.html"
   }
 ];
