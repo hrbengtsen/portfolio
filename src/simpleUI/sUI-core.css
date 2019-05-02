@@ -432,10 +432,16 @@ hr.content {
     .margin-top-n {
         margin-top: 20px
     }
+    .section-top-resp {
+        margin-top: 0
+    }
 }
 @media (min-width: 768px) {
     .margin-top-n {
         margin-top: -32px
+    }
+    .section-top-resp {
+        margin-top: 80px
     }
 }
 @media (min-width: 993px) {

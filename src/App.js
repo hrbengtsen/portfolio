@@ -27,8 +27,3 @@ const App = () => (
 );
 
 export default App;
-
-/*
-  To-do:
-  - Fix hero-phone & hero-tablet in other browsers
-*/

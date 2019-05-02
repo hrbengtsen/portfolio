@@ -5,7 +5,7 @@ import ProjectCover from '../../other/ProjectCover';
 
 const Projects = ({match}) => (
   <div className="content">
-    <div className="section-top row-padding">
+    <div className="section-top-resp row-padding">
       <div className="col s12 m12 l12">
         <Link to={`${match.url}/kvizboks`}>
           <ProjectCover

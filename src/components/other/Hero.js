@@ -5,7 +5,7 @@ import heroTablet from '../../img/hero-tablet.svg';
 
 const Hero = () => (
   <div className="bg-hero center">
-    <main className="content section-top">
+    <main className="content section-top-resp">
       <div className="anim-seq">
         <h1 className="anim-fadeInLeft wide">Mikkel Bengtsen</h1>
         <h3 className="anim-fadeInLeft">- a developer with a passion for creating.</h3>
