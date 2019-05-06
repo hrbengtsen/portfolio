@@ -18,7 +18,7 @@ const About = () => (
     <ArrowButton />
     <Text title={"Who am I?"} parentClasses={"section container"} text={
       <div>
-        <p>I'm a 19 years old aspiring developer based in Aarhus, Denmark.
+        <p>My name is Mikkel Bengtsen and I'm a 19 years old aspiring developer based in Aarhus, Denmark.
         I have a passion for creating and designing anything digital
         and I'm not afraid to try something new, as I want to keep learning and get outside of my comfort zone!
         </p>
