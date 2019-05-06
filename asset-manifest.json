@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.535e66b7.chunk.css",
-  "main.js": "/static/js/main.33186a79.chunk.js",
-  "main.js.map": "/static/js/main.33186a79.chunk.js.map",
+  "main.js": "/static/js/main.6948d2cd.chunk.js",
+  "main.js.map": "/static/js/main.6948d2cd.chunk.js.map",
   "static/js/1.58b1966b.chunk.js": "/static/js/1.58b1966b.chunk.js",
   "static/js/1.58b1966b.chunk.js.map": "/static/js/1.58b1966b.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -25,9 +25,9 @@
   "static/media/portfolio-logo.png": "/static/media/portfolio-logo.8c7e8425.png",
   "static/media/hero-phone.svg": "/static/media/hero-phone.fa2f7ac7.svg",
   "static/media/portfolio-render.png": "/static/media/portfolio-render.4ba482a0.png",
-  "static/media/App.css": "/static/media/portfolio.71cf1648.png",
+  "static/media/App.css": "/static/media/grostedet9.cfdeac31.png",
   "static/css/main.535e66b7.chunk.css.map": "/static/css/main.535e66b7.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.c2b593db637654cb15aaf11a86d2b804.js": "/precache-manifest.c2b593db637654cb15aaf11a86d2b804.js",
+  "precache-manifest.08d4b87d9ff8fa32b30ccc8d8e783035.js": "/precache-manifest.08d4b87d9ff8fa32b30ccc8d8e783035.js",
   "service-worker.js": "/service-worker.js"
 }
