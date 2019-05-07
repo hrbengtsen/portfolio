@@ -92,6 +92,10 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio-render.4ba482a0.png"
   },
   {
+    "revision": "2d1a4a6e072d629948d11158833b0382",
+    "url": "/static/media/hero-pc.2d1a4a6e.svg"
+  },
+  {
     "revision": "db6f3e551da7ca7b6c8c56fdea1df1d6",
     "url": "/static/media/kvizboks.db6f3e55.png"
   },
@@ -100,16 +104,12 @@ self.__precacheManifest = [
     "url": "/static/media/bengtsen-velvaere.9a8072cd.png"
   },
   {
-    "revision": "71cf1648f2e9f194624ff2c4fcc12edd",
-    "url": "/static/media/portfolio.71cf1648.png"
-  },
-  {
     "revision": "cfdeac31832385e844c49e6c9c27c623",
     "url": "/static/media/grostedet9.cfdeac31.png"
   },
   {
-    "revision": "2d1a4a6e072d629948d11158833b0382",
-    "url": "/static/media/hero-pc.2d1a4a6e.svg"
+    "revision": "71cf1648f2e9f194624ff2c4fcc12edd",
+    "url": "/static/media/portfolio.71cf1648.png"
   },
   {
     "revision": "8a9536f90cb4c1942f0e34c715bd3c31",
