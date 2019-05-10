@@ -10,8 +10,8 @@ const Contact = () => (
     </a>
 
     <div className="margin-top">
-      <a href="https://twitter.com/hrbengtsen" className="margin padding-small anim-colour text-gray hover-text-white fa fa-twitter xlarge"></a>
-      <a href="https://github.com/hrbengtsen" className="margin padding-small anim-colour text-gray hover-text-white fa fa-github xlarge"></a>
+      <a href="https://twitter.com/hrbengtsen" aria-label="Twitter" className="margin padding-small anim-colour text-gray hover-text-white fab fa-twitter xlarge"></a>
+      <a href="https://github.com/hrbengtsen" aria-label="Github" className="margin padding-small anim-colour text-gray hover-text-white fab fa-github xlarge"></a>
     </div>
   </div>
 );

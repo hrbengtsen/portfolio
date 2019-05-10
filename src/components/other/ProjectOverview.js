@@ -8,7 +8,7 @@ const ProjectOverview = (props) => (
 
       <p className="margin padding-small text-gray large">
         <span>{props.date}</span>
-        <a href={`https://github.com/hrbengtsen/${props.project}`} className="margin padding-small anim-colour text-gray hover-text-white fa fa-github xlarge"></a>
+        <a href={`https://github.com/hrbengtsen/${props.project}`} aria-label="Project's Github" className="margin padding-small anim-colour text-gray hover-text-white fab fa-github xlarge"></a>
       </p>
     </div>
   </div>
