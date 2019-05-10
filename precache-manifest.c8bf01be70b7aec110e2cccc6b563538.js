@@ -92,16 +92,16 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio-render.4ba482a0.png"
   },
   {
-    "revision": "b34fe75e7fa794ed4f0d6cc7fbecd30c",
-    "url": "/static/media/fa-brands-400.b34fe75e.eot"
-  },
-  {
     "revision": "d420d29adc3011fc0087c24962a25897",
     "url": "/static/media/fa-brands-400.d420d29a.woff"
   },
   {
     "revision": "e793b4d96c9520e78a2cedde2f9ddd8c",
     "url": "/static/media/fa-brands-400.e793b4d9.woff2"
+  },
+  {
+    "revision": "b34fe75e7fa794ed4f0d6cc7fbecd30c",
+    "url": "/static/media/fa-brands-400.b34fe75e.eot"
   },
   {
     "revision": "2e568f696e1732fed495f784850da2a5",
@@ -116,12 +116,12 @@ self.__precacheManifest = [
     "url": "/static/media/hero-pc.2d1a4a6e.svg"
   },
   {
-    "revision": "db6f3e551da7ca7b6c8c56fdea1df1d6",
-    "url": "/static/media/kvizboks.db6f3e55.png"
-  },
-  {
     "revision": "9a8072cd8e0f20b97e18236bce80cf80",
     "url": "/static/media/bengtsen-velvaere.9a8072cd.png"
+  },
+  {
+    "revision": "db6f3e551da7ca7b6c8c56fdea1df1d6",
+    "url": "/static/media/kvizboks.db6f3e55.png"
   },
   {
     "revision": "cfdeac31832385e844c49e6c9c27c623",
