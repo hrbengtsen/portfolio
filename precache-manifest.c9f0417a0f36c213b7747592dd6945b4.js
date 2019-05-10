@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks-video-thumbnail.4684e3f0.jpg"
   },
   {
-    "revision": "282c309a34e4375e3ff3",
-    "url": "/static/css/main.ed63ad1d.chunk.css"
+    "revision": "bdfab6a14eb3bb32eef1",
+    "url": "/static/css/main.234f4330.chunk.css"
   },
   {
     "revision": "58b1966bbb1b74bb5a03",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks-video.14a00987.mp4"
   },
   {
-    "revision": "282c309a34e4375e3ff3",
-    "url": "/static/js/main.282c309a.chunk.js"
+    "revision": "bdfab6a14eb3bb32eef1",
+    "url": "/static/js/main.bdfab6a1.chunk.js"
   },
   {
     "revision": "65d20db9f1bc6255914729fdae164f9c",
@@ -100,19 +100,19 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks.db6f3e55.png"
   },
   {
-    "revision": "cfdeac31832385e844c49e6c9c27c623",
-    "url": "/static/media/grostedet9.cfdeac31.png"
+    "revision": "71cf1648f2e9f194624ff2c4fcc12edd",
+    "url": "/static/media/portfolio.71cf1648.png"
   },
   {
     "revision": "9a8072cd8e0f20b97e18236bce80cf80",
     "url": "/static/media/bengtsen-velvaere.9a8072cd.png"
   },
   {
-    "revision": "71cf1648f2e9f194624ff2c4fcc12edd",
-    "url": "/static/media/portfolio.71cf1648.png"
+    "revision": "cfdeac31832385e844c49e6c9c27c623",
+    "url": "/static/media/grostedet9.cfdeac31.png"
   },
   {
-    "revision": "6dda83e4eb39d7edcf3eaf05049414e2",
+    "revision": "995a6edcd866ba4848b7d47d69baf214",
     "url": "/index.html"
   }
 ];
