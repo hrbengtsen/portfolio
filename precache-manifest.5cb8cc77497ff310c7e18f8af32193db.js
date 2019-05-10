@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks-video-thumbnail.4684e3f0.jpg"
   },
   {
-    "revision": "6948d2cd8ce38db14581",
-    "url": "/static/css/main.535e66b7.chunk.css"
+    "revision": "282c309a34e4375e3ff3",
+    "url": "/static/css/main.ed63ad1d.chunk.css"
   },
   {
     "revision": "58b1966bbb1b74bb5a03",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/static/media/kvizboks-video.14a00987.mp4"
   },
   {
-    "revision": "6948d2cd8ce38db14581",
-    "url": "/static/js/main.6948d2cd.chunk.js"
+    "revision": "282c309a34e4375e3ff3",
+    "url": "/static/js/main.282c309a.chunk.js"
   },
   {
     "revision": "65d20db9f1bc6255914729fdae164f9c",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio.71cf1648.png"
   },
   {
-    "revision": "8a9536f90cb4c1942f0e34c715bd3c31",
+    "revision": "6432a132da573c675f813804f60ebd42",
     "url": "/index.html"
   }
 ];
