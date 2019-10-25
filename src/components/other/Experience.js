@@ -16,7 +16,7 @@ class Experience extends Component {
       text = <p>I have experience with <span className="text-red bold">UI/UX, graphic- and interactiondesign</span> and am fairly comfortable working in <span className="text-red bold">Photoshop, Illustrator and InDesign.</span></p>;
     }
     else {
-      text = <p>I have experience with <span className="text-red bold">HTML, CSS, JavaScript, React, Processing and Arduino.</span> For version control and management I have experience with <span className="text-red bold">Git, Github and Trello.</span></p>;
+      text = <p>I have experience with <span className="text-red bold">HTML, CSS, JavaScript, React, Java, Processing and Arduino.</span> For version control and management I have experience with <span className="text-red bold">Git, Github and Trello.</span></p>;
     }
 
     return (
