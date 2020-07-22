@@ -39,7 +39,7 @@ class Nav extends Component {
 
         {this.props.footer ?
           <footer className="container center text-gray">
-            <p>© 2019, Designed and Developed by <Link to="/" className="link-current">Mikkel Bengtsen</Link>.</p>
+            <p>Copyright © 2020, Designed and Developed by <Link to="/" className="link-current">Mikkel Bengtsen</Link>.</p>
           </footer> : ""}
       </div>
     );

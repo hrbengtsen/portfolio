@@ -10,6 +10,7 @@ import KvizBoks from './projects/KvizBoks';
 import Grostedet9 from './projects/Grostedet9';
 import BengtsenVelvaere from './projects/BengtsenVelvaere';
 import Portfolio from './projects/Portfolio';
+import Pomodoify from './projects/Pomodoify';
 
 const Work = ({match}) => (
   <div>
@@ -22,6 +23,7 @@ const Work = ({match}) => (
       <Route path={`${match.path}/grostedet9`} component={Grostedet9} />
       <Route path={`${match.path}/bengtsen-velvaere`} component={BengtsenVelvaere} />
       <Route path={`${match.path}/portfolio`} component={Portfolio} />
+      <Route path={`${match.path}/pomodoify`} component={Pomodoify} />
 
       <Route path={match.path} component={Projects} />
     </Switch>

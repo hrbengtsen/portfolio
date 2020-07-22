@@ -161,7 +161,10 @@
 .portfolio {
   background: url('./img/portfolio.png');
 }
-.KvizBoks, .grostedet9, .bengtsen-velvaere, .portfolio {
+.Pomodoify {
+  background: url('./img/pomodoify.png');
+}
+.KvizBoks, .grostedet9, .bengtsen-velvaere, .portfolio, .Pomodoify {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat

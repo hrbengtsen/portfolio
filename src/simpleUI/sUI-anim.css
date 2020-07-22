@@ -185,11 +185,11 @@
 .anim-fadeInUp {
     opacity: 0;
 
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: .7s;
     -webkit-animation-fill-mode: both;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: .7s;
     -moz-animation-fill-mode: both;
 
     animation-name: fadeInUp;
@@ -224,6 +224,9 @@
 }
 .anim-seq .anim-fadeInUp:nth-child(3), .anim-seq-3 {
     animation-delay: .6s
+}
+.anim-seq .anim-fadeInUp:nth-child(4), .anim-seq-4 {
+    animation-delay: .8s
 }
 
 .anim-fadeInDown {
@@ -264,11 +267,11 @@
 .anim-fadeInLeft {
     opacity: 0;
 
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: .7s;
     -webkit-animation-fill-mode: both;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: .7s;
     -moz-animation-fill-mode: both;
 
     animation-name: fadeInLeft;
@@ -296,10 +299,10 @@
     }
 }
 .anim-seq .anim-fadeInLeft:nth-child(1) {
-    animation-delay: .6s
+    animation-delay: .4s
 }
 .anim-seq .anim-fadeInLeft:nth-child(2) {
-    animation-delay: .8s
+    animation-delay: .6s
 }
 
 .anim-fadeInRight {

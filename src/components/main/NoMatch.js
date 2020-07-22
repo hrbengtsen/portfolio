@@ -11,9 +11,9 @@ const NoMatch = () => (
       <title>404 - Mikkel Bengtsen</title>
     </Helmet>
     <Nav />
-    <h1 className="content center section-top">
+    <h2 className="content center section-top">
       <span className="text-red">(404)</span> Page not found.
-    </h1>
+    </h2>
     <Button name={"Go to homepage"} link={"/"} />
     <Contact />
     <Nav reverse footer />

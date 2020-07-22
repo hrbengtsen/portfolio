@@ -6,7 +6,19 @@ import ProjectCover from '../../other/ProjectCover';
 const Projects = ({match}) => (
   <div className="content">
     <div className="section-top-resp row-padding">
-      <div className="col s12 m12 l12">
+      <div className="col s12 m6 l6">
+        <Link to={`${match.url}/pomodoify`}>
+          <ProjectCover
+            parentClasses={"project-small Pomodoify anim-seq-1"}
+            hover={"hover-bg-small light-blue"}
+            title={"Pomodoify"}
+            type={"webapp"}
+            date={"2020"}
+          />
+        </Link>
+      </div>
+
+      <div className="col s12 m6 l6">
         <Link to={`${match.url}/kvizboks`}>
           <ProjectCover
             parentClasses={"project-small KvizBoks anim-seq-1"}
@@ -34,18 +46,6 @@ const Projects = ({match}) => (
 
       <div className="col s12 m4 l4">
         <div className="row vert-rows-top">
-          <Link to={`${match.url}/bengtsen-velvaere`}>
-            <ProjectCover
-              parentClasses={"project-small bengtsen-velvaere anim-seq-3"}
-              hover={"hover-bg-small red"}
-              title={"bengtsen-velvaere"}
-              type={"website"}
-              date={"2018"}
-            />
-          </Link>
-        </div>
-
-        <div className="row vert-rows-bottom">
           <Link to={`${match.url}/portfolio`}>
             <ProjectCover
               parentClasses={"project-small portfolio anim-seq-3"}
@@ -53,6 +53,18 @@ const Projects = ({match}) => (
               title={"portfolio"}
               type={"webapp"}
               date={"2019"}
+            />
+          </Link>
+        </div>
+
+        <div className="row vert-rows-bottom">
+          <Link to={`${match.url}/bengtsen-velvaere`}>
+            <ProjectCover
+              parentClasses={"project-small bengtsen-velvaere anim-seq-3"}
+              hover={"hover-bg-small red"}
+              title={"bengtsen-velvaere"}
+              type={"website"}
+              date={"2018"}
             />
           </Link>
         </div>
