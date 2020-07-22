@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "616bc56c2ba5e54eea66",
-    "url": "/static/css/main.327878cb.chunk.css"
+    "revision": "114c8061c708df2c3988",
+    "url": "/static/css/main.852a3342.chunk.css"
   },
   {
-    "revision": "616bc56c2ba5e54eea66",
-    "url": "/static/js/main.616bc56c.chunk.js"
+    "revision": "114c8061c708df2c3988",
+    "url": "/static/js/main.114c8061.chunk.js"
   },
   {
-    "revision": "36bd65b032b78ff9c1f2",
-    "url": "/static/js/1.36bd65b0.chunk.js"
+    "revision": "a5973dd331c436fedbda",
+    "url": "/static/js/1.a5973dd3.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -92,6 +92,18 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio-render.4ba482a0.png"
   },
   {
+    "revision": "0a0d5a26bbc062ce6560c2462ab0ee25",
+    "url": "/static/media/pomodoify-user.0a0d5a26.png"
+  },
+  {
+    "revision": "cf774957871343e02ac3523a60ea1ca6",
+    "url": "/static/media/pomodoify-timer.cf774957.png"
+  },
+  {
+    "revision": "2d7d71dd612e0e55dab905cd4f01429e",
+    "url": "/static/media/pomodoify-progression.2d7d71dd.png"
+  },
+  {
     "revision": "b34fe75e7fa794ed4f0d6cc7fbecd30c",
     "url": "/static/media/fa-brands-400.b34fe75e.eot"
   },
@@ -100,12 +112,12 @@ self.__precacheManifest = [
     "url": "/static/media/fa-brands-400.d420d29a.woff"
   },
   {
-    "revision": "2e568f696e1732fed495f784850da2a5",
-    "url": "/static/media/fa-brands-400.2e568f69.ttf"
-  },
-  {
     "revision": "e793b4d96c9520e78a2cedde2f9ddd8c",
     "url": "/static/media/fa-brands-400.e793b4d9.woff2"
+  },
+  {
+    "revision": "2e568f696e1732fed495f784850da2a5",
+    "url": "/static/media/fa-brands-400.2e568f69.ttf"
   },
   {
     "revision": "34602957747bbe7d753ddbb2bdeea721",
@@ -124,6 +136,10 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio.71cf1648.png"
   },
   {
+    "revision": "c7dfe03a0e6d9950dcc7289038314a33",
+    "url": "/static/media/pomodoify.c7dfe03a.png"
+  },
+  {
     "revision": "9a8072cd8e0f20b97e18236bce80cf80",
     "url": "/static/media/bengtsen-velvaere.9a8072cd.png"
   },
@@ -132,7 +148,7 @@ self.__precacheManifest = [
     "url": "/static/media/grostedet9.cfdeac31.png"
   },
   {
-    "revision": "97c27f2be5b25c07ba2ce2dd848eb604",
+    "revision": "960217cbbcfd5d2a1fc0adc9cb3a924f",
     "url": "/index.html"
   }
 ];
