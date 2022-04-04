@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pre-commit": "pretty-quick --staged",
+    "pre-commit": "pretty-quick --staged && lint-staged",
     "type-check": "tsc --noEmit",
     "prepare": "husky install"
   },
