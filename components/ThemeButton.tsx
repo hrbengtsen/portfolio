@@ -16,7 +16,7 @@ export function ThemeButton() {
     >
       <Button
         size="circle"
-        highlight
+        ghost
         move
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >

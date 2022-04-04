@@ -11,12 +11,13 @@ type MetaDataProps = {
 
 export const MetaData = (props: MetaDataProps) => {
   // Insert your own default metadata here
-  const baseUrl = "https://www.styple.dev";
-  const siteName = "styple";
+  const baseUrl = "https://mikkelbengtsen.com";
+  const siteName = "Mikkel Bengtsen";
 
   const meta = {
-    title: "nextjs styple starter",
-    description: "Next.js + styple.",
+    title: "Mikkel Bengtsen",
+    description:
+      "I'm a student, developer and designer passionate about making digital products and creating digital experiences.",
     image: `${baseUrl}/starter-og.png`,
     type: "website",
     ...props,

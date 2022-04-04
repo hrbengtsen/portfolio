@@ -5,6 +5,7 @@ import {
   Text,
   Card,
   Grid,
+  Avatar,
 } from "@styple/design-system";
 import {
   enterAndStagger,
@@ -13,6 +14,7 @@ import {
 } from "../lib/animations";
 import { Header } from "../components/Header";
 import NextLink from "next/link";
+import { ArrowBigLeft } from "lucide-react";
 
 export default function Home() {
   return (
@@ -32,13 +34,11 @@ export default function Home() {
             transform: "translate(-50%, -50%)",
             animation: `${contentEnterAnim} 1.25s forwards`,
             animationDelay: "2.5s",
-            mt: "$max",
             px: "$xl",
           }}
         >
           <Heading
             css={{
-              fontWeight: "$black",
               fontSize: "$2xl",
               "@bp2": {
                 fontSize: "$3xl",
@@ -48,7 +48,14 @@ export default function Home() {
             <Container
               as="span"
               className={enterAndStagger()}
-              css={{ display: "inline-block" }}
+              css={{
+                display: "inline-block",
+                background:
+                  "linear-gradient($colors$accent100A, $colors$accent200)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                fontWeight: "$black",
+              }}
             >
               Hey
             </Container>{" "}
@@ -84,17 +91,27 @@ export default function Home() {
         className={enterAndStagger()}
         css={{
           $$stagger: 29,
-          maxWidth: "$4xl",
+          maxWidth: "640px",
           mx: "auto",
           mt: "320px",
           px: "$xl",
         }}
       >
         <Flex css={{ flexDirection: "column", gap: "$max" }}>
-          <Text css={{ fontSize: "$md" }}>
-            I'm a student, developer and designer passionate about making
-            digital products and creating digital experiences.
-          </Text>
+          <Container>
+            <Text css={{ fontSize: "$md", mb: "$lg" }}>
+              I'm a student, developer and designer passionate about making
+              digital products and creating digital experiences.
+            </Text>
+            <Flex css={{ alignItems: "center" }}>
+              <Avatar
+                src="/founder.webp"
+                alt="Mikkel Bengtsen on a sunny spring day with sunglasses on."
+                size="xl"
+              />
+              <Text css={{ color: "$text300" }}>— that's me 👋</Text>
+            </Flex>
+          </Container>
           <Flex
             css={{
               flexDirection: "column",

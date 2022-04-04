@@ -4,22 +4,38 @@ import {
   Tooltip,
   Flex,
   Button,
+  darkTheme,
 } from "@styple/design-system";
 import { ThemeButton } from "./ThemeButton";
 import { NavLinkItem } from "./NavLinkItem";
 import { openFullNav, slideRight, enterDown } from "../lib/animations";
-import { Home, Disc, Lightbulb } from "lucide-react";
+import { Home, Disc, Lightbulb, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export function Header() {
+  const router = useRouter();
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [removeEnterAnim, setRemoveEnterAnim] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setRemoveEnterAnim(true);
+    }, 29 * 120 + 500); // 29 * 120 = complete stagger + 500 for animation duration
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflowY = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
+
   return (
     <Container
+      className={removeEnterAnim ? undefined : enterDown()}
       css={{
-        transform: "translateY(-48px)",
-        opacity: 0,
-        animation: `${enterDown} 500ms forwards`,
-        animationDelay: "calc(29 * 120ms)",
         position: "fixed",
-        top: "$lg",
+        top: 0,
+        pt: "$lg",
         width: "100%",
         zIndex: "$1",
       }}
@@ -29,7 +45,7 @@ export function Header() {
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-end",
-          pr: "$lg",
+          pr: "$xl",
           "@bp2": {
             justifyContent: "center",
             pr: 0,
@@ -40,8 +56,11 @@ export function Header() {
             css={{
               alignItems: "center",
               gap: "$md",
-              bg: "$bg200",
+              bg: "$bg300",
               boxShadow: "$sm",
+              [`.${darkTheme} &`]: {
+                boxShadow: "$lg",
+              },
               borderRadius: "$pill",
               p: "$xs",
             }}
@@ -53,8 +72,8 @@ export function Header() {
                 </>
               }
             >
-              <NavLinkItem size="circle" highlight move href="/">
-                <Home />
+              <NavLinkItem size="circle" ghost move href="/">
+                <Home strokeWidth={router.pathname === "/" ? 3 : 2} />
               </NavLinkItem>
             </Tooltip>
             <Tooltip
@@ -64,8 +83,8 @@ export function Header() {
                 </>
               }
             >
-              <NavLinkItem size="circle" highlight move href="/arcade">
-                <Disc />
+              <NavLinkItem size="circle" ghost move href="/arcade">
+                <Disc strokeWidth={router.pathname === "/arcade" ? 3 : 2} />
               </NavLinkItem>
             </Tooltip>
             <Tooltip
@@ -75,13 +94,19 @@ export function Header() {
                 </>
               }
             >
-              <NavLinkItem size="circle" highlight move href="/projects">
-                <Lightbulb />
+              <NavLinkItem size="circle" ghost move href="/projects">
+                <Lightbulb
+                  strokeWidth={router.pathname === "/projects" ? 3 : 2}
+                />
               </NavLinkItem>
             </Tooltip>
             <ThemeButton />
           </Flex>
         }
+        open={isOpen}
+        onOpenChange={(open) => {
+          setIsOpen(open);
+        }}
         mobileContent={
           <Flex
             css={{
@@ -89,57 +114,96 @@ export function Header() {
                 display: "none",
               },
               flexDirection: "column",
+              gap: "$md",
               position: "fixed",
               bg: "$bg300A",
               backdropFilter: "blur(16px)",
-              animation: `${openFullNav} 200ms cubic-bezier(0.87, 0, 0.13, 1)`,
+              animation: `${openFullNav} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
               zIndex: "$max",
               top: "0",
               left: "0",
-              width: "100%",
-              height: "100%",
+              width: "100vw",
+              height: "100vh",
+              pt: "$4xl",
             }}
           >
-            <Button>Close</Button>
-
-            <NavLinkItem
+            <Button
               ghost
-              href="/docs/components/navbar"
+              onClick={() => setIsOpen(false)}
               css={{
-                animation: `${slideRight} 200ms cubic-bezier(0.87, 0, 0.13, 1)`,
-                animationFillMode: "forwards",
-                willChange: "transform",
-                visibility: "hidden",
+                position: "absolute",
+                top: "$xs",
+                right: "$sm",
+                zIndex: "$1",
               }}
             >
-              Link 1
-            </NavLinkItem>
+              <X size={32} />
+            </Button>
+
             <NavLinkItem
               ghost
               href="/"
               css={{
-                animation: `${slideRight} 200ms cubic-bezier(0.87, 0, 0.13, 1)`,
-                animationDelay: "75ms",
+                animation: `${slideRight} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
                 animationFillMode: "forwards",
                 willChange: "transform",
-                visibility: "hidden",
+                transform: "translateX(-100%)",
+                display: "flex",
+                alignItems: "center",
+                gap: "$md",
+                fontSize: "$md",
               }}
             >
-              Link 2
+              <Home strokeWidth={router.pathname === "/" ? 3 : 2} /> Home
             </NavLinkItem>
             <NavLinkItem
               ghost
-              href="https://www.bitetap.com/"
+              href="/arcade"
               css={{
-                animation: `${slideRight} 200ms cubic-bezier(0.87, 0, 0.13, 1)`,
-                animationDelay: "150ms",
+                animation: `${slideRight} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
+                animationDelay: "100ms",
                 animationFillMode: "forwards",
                 willChange: "transform",
-                visibility: "hidden",
+                transform: "translateX(-100%)",
+                display: "flex",
+                alignItems: "center",
+                gap: "$md",
+                fontSize: "$md",
               }}
             >
-              Link 3
+              <Disc strokeWidth={router.pathname === "/arcade" ? 3 : 2} /> The
+              Arcade
             </NavLinkItem>
+            <NavLinkItem
+              ghost
+              href="/projects"
+              css={{
+                animation: `${slideRight} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
+                animationDelay: "200ms",
+                animationFillMode: "forwards",
+                willChange: "transform",
+                transform: "translateX(-100%)",
+                display: "flex",
+                alignItems: "center",
+                gap: "$md",
+                fontSize: "$md",
+              }}
+            >
+              <Lightbulb
+                strokeWidth={router.pathname === "/projects" ? 3 : 2}
+              />{" "}
+              Projects
+            </NavLinkItem>
+            <Container
+              css={{
+                position: "absolute",
+                bottom: "$4xl",
+                left: "$sm",
+                zIndex: "$1",
+              }}
+            >
+              <ThemeButton />
+            </Container>
           </Flex>
         }
       />
