@@ -114,7 +114,7 @@ export function Header() {
                 display: "none",
               },
               flexDirection: "column",
-              gap: "$md",
+              gap: "$lg",
               position: "fixed",
               bg: "$bg300A",
               backdropFilter: "blur(16px)",
@@ -143,6 +143,7 @@ export function Header() {
             <NavLinkItem
               ghost
               href="/"
+              size="lg"
               css={{
                 animation: `${slideRight} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
                 animationFillMode: "forwards",
@@ -159,6 +160,7 @@ export function Header() {
             <NavLinkItem
               ghost
               href="/arcade"
+              size="lg"
               css={{
                 animation: `${slideRight} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
                 animationDelay: "100ms",
@@ -177,6 +179,7 @@ export function Header() {
             <NavLinkItem
               ghost
               href="/projects"
+              size="lg"
               css={{
                 animation: `${slideRight} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
                 animationDelay: "200ms",
@@ -198,7 +201,7 @@ export function Header() {
               css={{
                 position: "absolute",
                 bottom: "$4xl",
-                left: "$sm",
+                left: "$md",
                 zIndex: "$1",
               }}
             >

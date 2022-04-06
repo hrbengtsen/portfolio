@@ -13,12 +13,47 @@ import {
   contentEnterAnim,
 } from "../lib/animations";
 import { Header } from "../components/Header";
+import { Link } from "../components/Link";
 import NextLink from "next/link";
-import { ArrowBigLeft } from "lucide-react";
+import { useTheme } from "next-themes";
+import { ArrowBigRight, ArrowUpRight } from "lucide-react";
+import { useMounted } from "@styple/hooks";
+import Image from "next/image";
 
 export default function Home() {
+  const { resolvedTheme } = useTheme();
+  const mounted = useMounted();
+
+  if (!mounted) return null;
+
   return (
     <Container>
+      <Container
+        css={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          width: "100%",
+          height: "320px",
+          overflow: "hidden",
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          width="100%"
+          height="100%"
+          style={{ minWidth: "1440px" }}
+        >
+          <path
+            fill={resolvedTheme === "dark" ? "#000000" : "#FFFFFF"}
+            fillOpacity="1"
+            d="M0,160L48,154.7C96,149,192,139,288,154.7C384,171,480,213,576,229.3C672,245,768,235,864,197.3C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </Container>
       <Header />
 
       <Container>
@@ -43,6 +78,7 @@ export default function Home() {
               "@bp2": {
                 fontSize: "$3xl",
               },
+              fontWeight: "$black",
             }}
           >
             <Container
@@ -54,7 +90,6 @@ export default function Home() {
                   "linear-gradient($colors$accent100A, $colors$accent200)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-                fontWeight: "$black",
               }}
             >
               Hey
@@ -118,26 +153,144 @@ export default function Home() {
               gap: "$xl",
             }}
           >
-            <Heading as="h3">My projects</Heading>
+            <Heading as="h3" css={{ fontWeight: "$black" }}>
+              My projects
+            </Heading>
             <Grid
               css={{
-                gridTemplateColumns: "1fr 1fr",
+                gridTemplateRows: "200px 200px",
+                gridTemplateColumns: "1fr",
+                "@bp2": {
+                  gridTemplateRows: "200px",
+                  gridTemplateColumns: "1fr 1fr",
+                },
                 gap: "$xl",
-                gridAutoRows: "200px",
               }}
             >
-              <NextLink href="/work/styple" passHref>
+              <NextLink href="/projects/styple" passHref>
                 <Card as="a" interactive>
-                  styple
+                  <Container
+                    css={{
+                      width: "100%",
+                      height: "100%",
+                      p: "40px",
+                    }}
+                  >
+                    <Container
+                      css={{
+                        position: "relative",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    >
+                      <Image
+                        src="/styple.svg"
+                        layout="fill"
+                        objectFit="scale-down"
+                      />
+                    </Container>
+                  </Container>
+                  <Text>
+                    An accessible design system for React{" "}
+                    <ArrowUpRight size={16} />
+                  </Text>
                 </Card>
               </NextLink>
-              <NextLink href="/work/styple" passHref>
+              <NextLink href="/projects/bitetap" passHref>
                 <Card as="a" interactive>
-                  Bitetap
+                  <Container
+                    css={{
+                      width: "100%",
+                      height: "100%",
+                      p: "40px",
+                    }}
+                  >
+                    <Container
+                      css={{
+                        position: "relative",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    >
+                      <Image
+                        src="/bitetap.svg"
+                        layout="fill"
+                        objectFit="scale-down"
+                      />
+                    </Container>
+                  </Container>
+                  <Text>
+                    A tool for your recipes and mealplans{" "}
+                    <ArrowUpRight size={16} />
+                  </Text>
                 </Card>
               </NextLink>
             </Grid>
+            <Container css={{ textAlign: "center" }}>
+              <Link
+                href="/projects"
+                css={{
+                  "& svg": {
+                    transition: "$transform",
+                  },
+                  "&:hover svg": {
+                    transform: "translateX(4px)",
+                  },
+                }}
+              >
+                Explore all my projects{" "}
+                <ArrowBigRight size={20} style={{ verticalAlign: "middle" }} />
+              </Link>
+            </Container>
           </Flex>
+          <Flex
+            css={{
+              flexDirection: "column",
+              gap: "$xl",
+            }}
+          >
+            <Heading as="h3" css={{ fontWeight: "$black" }}>
+              Currently
+            </Heading>
+
+            <Text css={{ fontSize: "$md" }}>
+              Finishing up my Computer Science bachelor by{" "}
+              <Link href="https://github.com/hrbengtsen/open-vote-network">
+                implementing the open vote network on the Concordium blockchain
+              </Link>
+              .
+            </Text>
+            <Text css={{ fontSize: "$md" }}>
+              Building on the web with modern technologies such as TypeScript
+              and React. Excited about UX/DX and design systems.
+            </Text>
+            <Text css={{ fontSize: "$md" }}>
+              Looking for meaningful and flexible work, where I can get
+              responsibility and make an impact.
+            </Text>
+          </Flex>
+          <Flex
+            css={{
+              flexDirection: "column",
+              gap: "$xl",
+            }}
+          >
+            <Heading as="h3" css={{ fontWeight: "$black" }}>
+              Get in touch?
+            </Heading>
+
+            <Text css={{ fontSize: "$md" }}>
+              You can reach me at{" "}
+              <Link href="mailto:mikkelbengtsen@gmail.com">
+                mikkelbengtsen@gmail.com
+              </Link>
+              .
+            </Text>
+          </Flex>
+
+          <Text css={{ textAlign: "center", color: "$text300", mb: "$xl" }}>
+            made with ✨ and 💻 in Denmark
+          </Text>
         </Flex>
       </Container>
     </Container>
