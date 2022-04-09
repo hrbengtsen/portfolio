@@ -9,20 +9,32 @@ import {
 import { ThemeButton } from "./ThemeButton";
 import { NavLinkItem } from "./NavLinkItem";
 import { openFullNav, slideRight, enterDown } from "../lib/animations";
-import { Home, Disc, Lightbulb, X } from "lucide-react";
+import { Home, Disc, Lightbulb, X, Github } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 export function Header() {
   const router = useRouter();
+  const isHomePage = router.pathname === "/";
 
   const [isOpen, setIsOpen] = useState(false);
+  const [hasDisplayedIntro, setHasDisplayIntro] = useState(false);
 
   const [removeEnterAnim, setRemoveEnterAnim] = useState(false);
   useEffect(() => {
+    const introInSession = sessionStorage.getItem("intro") === "true";
+
+    // 29 * 120 ms = complete stagger (on homepage) + 500 ms for animation duration
+    const timeoutDuration =
+      isHomePage && !introInSession ? 29 * 120 + 500 : 500;
+
+    if (introInSession) {
+      setHasDisplayIntro(true);
+    }
+
     setTimeout(() => {
       setRemoveEnterAnim(true);
-    }, 29 * 120 + 500); // 29 * 120 = complete stagger + 500 for animation duration
+    }, timeoutDuration);
   }, []);
 
   useEffect(() => {
@@ -38,6 +50,9 @@ export function Header() {
         pt: "$lg",
         width: "100%",
         zIndex: "$1",
+        $$delay: `${
+          isHomePage && !hasDisplayedIntro ? "calc(29 * 120ms)" : "0"
+        }`,
       }}
     >
       <Navbar
@@ -56,7 +71,8 @@ export function Header() {
             css={{
               alignItems: "center",
               gap: "$md",
-              bg: "$bg300",
+              bg: "$bg300A",
+              backdropFilter: "blur(16px)",
               boxShadow: "$sm",
               [`.${darkTheme} &`]: {
                 boxShadow: "$lg",
@@ -73,7 +89,7 @@ export function Header() {
               }
             >
               <NavLinkItem size="circle" ghost move href="/">
-                <Home strokeWidth={router.pathname === "/" ? 3 : 2} />
+                <Home strokeWidth={isHomePage ? 3 : 2} />
               </NavLinkItem>
             </Tooltip>
             <Tooltip
@@ -101,6 +117,22 @@ export function Header() {
               </NavLinkItem>
             </Tooltip>
             <ThemeButton />
+            <Tooltip
+              content={
+                <>
+                  <b>Github</b>
+                </>
+              }
+            >
+              <NavLinkItem
+                size="circle"
+                ghost
+                move
+                href="https://github.com/hrbengtsen"
+              >
+                <Github />
+              </NavLinkItem>
+            </Tooltip>
           </Flex>
         }
         open={isOpen}
@@ -197,16 +229,25 @@ export function Header() {
               />{" "}
               Projects
             </NavLinkItem>
-            <Container
+            <Flex
               css={{
                 position: "absolute",
                 bottom: "$4xl",
                 left: "$md",
                 zIndex: "$1",
+                gap: "$sm",
               }}
             >
               <ThemeButton />
-            </Container>
+              <NavLinkItem
+                size="circle"
+                ghost
+                move
+                href="https://github.com/hrbengtsen"
+              >
+                <Github />
+              </NavLinkItem>
+            </Flex>
           </Flex>
         }
       />

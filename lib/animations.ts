@@ -10,9 +10,10 @@ const enterAnim = keyframes({
 export const enterAndStagger = css({
   $$stagger: 0,
   $$delay: "120ms",
+  $$duration: "500ms",
   opacity: 0,
   willChange: "opacity, transform",
-  animation: `${enterAnim} 1s forwards`,
+  animation: `${enterAnim} $$duration forwards`,
   animationDelay: "calc($$stagger * $$delay)",
   "@motion": {
     animation: "none",
@@ -67,7 +68,8 @@ export const enterDown = css({
   transform: "translateY(-48px)",
   opacity: 0,
   animation: `${enterDownAnim} 500ms`,
-  animationDelay: "calc(29 * 120ms)",
+  $$delay: "calc(29 * 120ms)",
+  animationDelay: "$$delay",
   "@motion": {
     animation: "none",
   },

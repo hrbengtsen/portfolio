@@ -6,6 +6,9 @@ import {
 } from "@styple/design-system";
 import { ThemeProvider } from "next-themes";
 import { AppProps } from "next/app";
+import { Header } from "../components/Header";
+import { Wave } from "../components/Wave";
+import { Footer } from "../components/Footer";
 
 function App({ Component, pageProps }: AppProps) {
   globalStyles();
@@ -25,7 +28,10 @@ function App({ Component, pageProps }: AppProps) {
         defaultTheme="system"
       >
         <TooltipProvider>
+          <Header />
+          <Wave />
           <Component {...pageProps} />
+          <Footer />
         </TooltipProvider>
       </ThemeProvider>
     </>
