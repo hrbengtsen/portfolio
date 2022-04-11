@@ -67,7 +67,7 @@ const enterDownAnim = keyframes({
 export const enterDown = css({
   transform: "translateY(-48px)",
   opacity: 0,
-  animation: `${enterDownAnim} 500ms`,
+  animation: `${enterDownAnim} 500ms forwards`,
   $$delay: "calc(29 * 120ms)",
   animationDelay: "$$delay",
   "@motion": {

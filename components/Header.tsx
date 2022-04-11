@@ -18,7 +18,7 @@ export function Header() {
   const isHomePage = router.pathname === "/";
 
   const [isOpen, setIsOpen] = useState(false);
-  const [hasDisplayedIntro, setHasDisplayIntro] = useState(false);
+  const [hasDisplayedIntro, setHasDisplayedIntro] = useState(false);
 
   const [removeEnterAnim, setRemoveEnterAnim] = useState(false);
   useEffect(() => {
@@ -29,7 +29,7 @@ export function Header() {
       isHomePage && !introInSession ? 29 * 120 + 500 : 500;
 
     if (introInSession) {
-      setHasDisplayIntro(true);
+      setHasDisplayedIntro(true);
     }
 
     setTimeout(() => {
