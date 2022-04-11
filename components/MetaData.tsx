@@ -18,7 +18,7 @@ export const MetaData = (props: MetaDataProps) => {
     title: "Mikkel Bengtsen",
     description:
       "I'm a student, developer and designer passionate about making digital products and creating digital experiences.",
-    image: `${baseUrl}/starter-og.png`,
+    image: `${baseUrl}/og.png`,
     type: "website",
     ...props,
   };

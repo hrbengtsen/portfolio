@@ -186,6 +186,7 @@ export function Header() {
                 gap: "$md",
                 fontSize: "$md",
               }}
+              onClick={() => setIsOpen(false)}
             >
               <Home strokeWidth={router.pathname === "/" ? 3 : 2} /> Home
             </NavLinkItem>
@@ -204,6 +205,7 @@ export function Header() {
                 gap: "$md",
                 fontSize: "$md",
               }}
+              onClick={() => setIsOpen(false)}
             >
               <Disc strokeWidth={router.pathname === "/arcade" ? 3 : 2} /> The
               Arcade
@@ -223,6 +225,7 @@ export function Header() {
                 gap: "$md",
                 fontSize: "$md",
               }}
+              onClick={() => setIsOpen(false)}
             >
               <Lightbulb
                 strokeWidth={router.pathname === "/projects" ? 3 : 2}
