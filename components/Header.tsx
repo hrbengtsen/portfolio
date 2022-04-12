@@ -235,7 +235,7 @@ export function Header() {
             <Flex
               css={{
                 position: "absolute",
-                bottom: "$4xl",
+                bottom: "$max",
                 left: "$md",
                 zIndex: "$1",
                 gap: "$sm",
