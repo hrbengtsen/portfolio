@@ -12,6 +12,7 @@ import { openFullNav, slideRight, enterDown } from "../lib/animations";
 import { Home, Disc, Lightbulb, X, Github } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { useScrollListener } from "../lib/useScrollListener";
 
 export function Header() {
   const router = useRouter();
@@ -21,6 +22,18 @@ export function Header() {
   const [hasDisplayedIntro, setHasDisplayedIntro] = useState(false);
 
   const [removeEnterAnim, setRemoveEnterAnim] = useState(false);
+
+  const [hasScrolled, setHasScrolled] = useState(false);
+  useScrollListener(() => {
+    const scrolled = window.scrollY;
+
+    if (scrolled >= 32) {
+      setHasScrolled(true);
+    } else {
+      setHasScrolled(false);
+    }
+  });
+
   useEffect(() => {
     const introInSession = sessionStorage.getItem("intro") === "true";
 
@@ -71,9 +84,10 @@ export function Header() {
             css={{
               alignItems: "center",
               gap: "$md",
-              bg: "$bg300A",
+              bg: `${hasScrolled ? "$bg300A" : "$bg100A"}`,
+              transition: "$bgColor",
               backdropFilter: "blur(16px)",
-              boxShadow: "$sm",
+              boxShadow: `${hasScrolled ? "$sm" : "none"}`,
               [`.${darkTheme} &`]: {
                 boxShadow: "$lg",
               },
