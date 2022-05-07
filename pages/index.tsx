@@ -158,20 +158,7 @@ export default function Home() {
               />
             </Grid>
             <Container css={{ textAlign: "center" }}>
-              <Link
-                href="/projects"
-                css={{
-                  "& svg": {
-                    transition: "$transform",
-                  },
-                  "&:hover svg": {
-                    transform: "translateX(4px)",
-                  },
-                }}
-              >
-                Explore all my projects{" "}
-                <ArrowBigRight size={20} style={{ verticalAlign: "middle" }} />
-              </Link>
+              <Link href="/projects">Explore all my projects</Link>
             </Container>
           </Flex>
           <Flex

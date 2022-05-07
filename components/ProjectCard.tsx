@@ -30,9 +30,6 @@ export const ProjectCard = ({ href, svg, title, desc }: ProjectCardProps) => {
               alignItems: "center",
               flexBasis: "50%",
               px: "$4xl",
-              "@bp2": {
-                px: "$3xl",
-              },
 
               color: "$text200",
             }}
@@ -45,7 +42,7 @@ export const ProjectCard = ({ href, svg, title, desc }: ProjectCardProps) => {
             css={{
               textAlign: "center",
               px: "$lg",
-              fontSize: "$xl",
+              fontSize: "$lg",
               fontWeight: "$bold",
             }}
           >
