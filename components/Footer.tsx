@@ -1,4 +1,4 @@
-import { Section, Text } from "@styple/design-system";
+import { Text } from "@styple/design-system";
 
 export function Footer() {
   return (

@@ -74,3 +74,18 @@ export const enterDown = css({
     animation: "none",
   },
 });
+
+export const photosAnim = keyframes({
+  "0%": {
+    opacity: 0,
+    transform: "translate($$translateX, $$translateY)",
+  },
+  "50%": {
+    opacity: 1,
+    transform: "translate($$translateX, $$translateY)",
+  },
+  "100%": {
+    opacity: 1,
+    transform: "translate(0, 0)",
+  },
+});

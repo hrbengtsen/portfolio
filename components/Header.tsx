@@ -9,7 +9,7 @@ import {
 import { ThemeButton } from "./ThemeButton";
 import { NavLinkItem } from "./NavLinkItem";
 import { openFullNav, slideRight, enterDown } from "../lib/animations";
-import { Home, Disc, Lightbulb, X, Github } from "lucide-react";
+import { Home, Disc, Lightbulb, X, Github, Camera } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useScrollListener } from "../lib/useScrollListener";
@@ -130,6 +130,17 @@ export function Header() {
                 />
               </NavLinkItem>
             </Tooltip>
+            <Tooltip
+              content={
+                <>
+                  <b>Photos</b>
+                </>
+              }
+            >
+              <NavLinkItem size="circle" ghost move href="/photos">
+                <Camera strokeWidth={router.pathname === "/photos" ? 3 : 2} />
+              </NavLinkItem>
+            </Tooltip>
             <ThemeButton />
             <Tooltip
               content={
@@ -245,6 +256,26 @@ export function Header() {
                 strokeWidth={router.pathname === "/projects" ? 3 : 2}
               />{" "}
               Projects
+            </NavLinkItem>
+            <NavLinkItem
+              ghost
+              href="/photos"
+              size="lg"
+              css={{
+                animation: `${slideRight} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,
+                animationDelay: "300ms",
+                animationFillMode: "forwards",
+                willChange: "transform",
+                transform: "translateX(-100%)",
+                display: "flex",
+                alignItems: "center",
+                gap: "$md",
+                fontSize: "$md",
+              }}
+              onClick={() => setIsOpen(false)}
+            >
+              <Camera strokeWidth={router.pathname === "/photos" ? 3 : 2} />{" "}
+              Photos
             </NavLinkItem>
             <Flex
               css={{

@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * Custom hook to add scroll listener and call handler each animation frame
+ * @param handleScroll
+ */
 export function useScrollListener(handleScroll: () => void) {
   const listenToScroll = React.useCallback(() => {
     requestAnimationFrame(() => handleScroll());
@@ -10,7 +14,7 @@ export function useScrollListener(handleScroll: () => void) {
     return () => {
       document.removeEventListener("scroll", listenToScroll);
     };
-  });
+  }, []);
 }
 
 /*

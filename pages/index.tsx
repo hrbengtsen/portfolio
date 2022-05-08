@@ -12,21 +12,13 @@ import {
   contentEnterAnim,
 } from "../lib/animations";
 import { Link } from "../components/Link";
-import { ArrowBigRight } from "lucide-react";
 import { StypleSVG } from "../components/svgs/StypleSVG";
 import { BitetapSVG } from "../components/svgs/BitetapSVG";
 import { ProjectCard } from "../components/ProjectCard";
-import { useEffect, useState } from "react";
+import { useBooleanSessionState } from "../lib/useBooleanSessionState";
 
 export default function Home() {
-  const [displayIntroAnim, setDisplayIntroAnim] = useState(true);
-
-  useEffect(() => {
-    if (sessionStorage.getItem("intro") === "true") {
-      setDisplayIntroAnim(false);
-    }
-    sessionStorage.setItem("intro", "true");
-  }, []);
+  const displayIntroAnim = useBooleanSessionState("intro");
 
   return (
     <>
