@@ -5,20 +5,25 @@ import {
   Text,
   Grid,
   Avatar,
+  Button,
 } from "@styple/design-system";
 import {
   enterAndStagger,
   nameSlideAnim,
   contentEnterAnim,
+  waveAnim,
 } from "../lib/animations";
 import { Link } from "../components/Link";
 import { StypleSVG } from "../components/svgs/StypleSVG";
 import { BitetapSVG } from "../components/svgs/BitetapSVG";
 import { ProjectCard } from "../components/ProjectCard";
 import { useBooleanSessionState } from "../lib/useBooleanSessionState";
+import { useState } from "react";
 
 export default function Home() {
   const displayIntroAnim = useBooleanSessionState("intro");
+
+  const [wave, setWave] = useState(true);
 
   return (
     <>
@@ -114,7 +119,19 @@ export default function Home() {
                 alt="Mikkel Bengtsen on a sunny spring day with sunglasses on."
                 size="xl"
               />
-              <Text css={{ color: "$text300" }}>— that's me 👋</Text>
+              <Text css={{ color: "$text300" }}>— that's me</Text>
+              <Button
+                ghost
+                tactile
+                size="circle"
+                css={{
+                  animation: wave ? `${waveAnim} 600ms ease` : "none",
+                }}
+                onClick={() => setWave(true)}
+                onAnimationEnd={() => setWave(false)}
+              >
+                👋
+              </Button>
             </Flex>
           </Container>
           <Flex

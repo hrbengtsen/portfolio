@@ -89,3 +89,27 @@ export const photosAnim = keyframes({
     transform: "translate(0, 0)",
   },
 });
+
+export const waveAnim = keyframes({
+  "0%": {
+    transform: "translateX(0) rotate(0deg)",
+  },
+  "25%": {
+    transform: "translateX(-2px) rotate(-16deg)",
+  },
+  "50%": {
+    transform: "translateX(2px) rotate(16deg)",
+  },
+  "75%": {
+    transform: "translateX(-2px) rotate(-16deg)",
+  },
+  "100%": {
+    transform: "translateX(0) rotate(0deg)",
+  },
+});
+
+export const moveBg = keyframes({
+  to: {
+    backgroundPosition: "$$bgSize 0",
+  },
+});

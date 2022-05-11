@@ -27,7 +27,12 @@ export function Wave() {
         preserveAspectRatio="none"
         width="100%"
         height="100%"
-        style={{ minWidth: "1440px" }}
+        style={{
+          minWidth: "1440px",
+          filter: `drop-shadow(0 8px 16px ${
+            resolvedTheme === "dark" ? "#242425" : "#f1f1f1"
+          }`,
+        }}
       >
         <path
           fill={resolvedTheme === "dark" ? "#000000" : "#FFFFFF"}

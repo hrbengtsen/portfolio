@@ -5,10 +5,9 @@ import {
   Text,
   Badge,
   Section,
-  keyframes,
 } from "@styple/design-system";
 import Image from "next/image";
-import { enterAndStagger } from "../lib/animations";
+import { enterAndStagger, moveBg } from "../lib/animations";
 
 export default function Arcade() {
   return (
@@ -30,6 +29,15 @@ export default function Arcade() {
               fontSize: "$3xl",
             },
             fontWeight: "$black",
+
+            $$bgSize: "400%",
+            $$color0: "$colors$accent100",
+            $$color1: "$colors$danger100",
+            background:
+              "linear-gradient(90deg, $$color0, $$color1, $$color0) 0 0 / $$bgSize 100%",
+            animation: `${moveBg} 10s infinite linear`,
+            color: "transparent",
+            backgroundClip: "text",
           }}
         >
           The Arcade
